@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KrushiMitra — Smart Farming Guidance & Agricultural Knowledge Portal</title>
+  <meta name="description" content="KrushiMitra is a comprehensive Indian agricultural portal offering verified crop guides, plant disease diagnosis, pesticide safety labels, seasonal advisories, and government scheme information for farmers.">
+  <meta name="keywords" content="smart farming, agriculture gujarat, crop guide cotton, groundnut farming, cumin diseases, kisan schemes, pest management, bio-fertilizers">
+  
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="KrushiMitra — Smart Farming Guidance Portal">
+  <meta property="og:description" content="Practical, verified agricultural intelligence for Indian farmers. Crop cultivation, soil health, disease identification, and official schemes.">
+  <meta property="og:type" content="website">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div style="background-color: var(--color-forest-dark); color: #D5E5DA; font-size: 0.8rem; padding: 7px 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <span style="background-color: var(--color-gold); color: var(--color-forest-dark); font-weight: 800; padding: 1px 6px; border-radius: 3px; font-size: 0.7rem;">ADVISORY</span>
+        <span>Kharif Harvest & Rabi Seed Preparation Notice (Gujarat State Zone)</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <span>National Kisan Helpline: <strong style="color: #FFFFFF;">1800-180-1551</strong> (Toll Free, 6 AM - 10 PM)</span>
+        <a href="schemes.html" style="color: var(--color-gold); text-decoration: underline;">View Active Schemes</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo" aria-label="KrushiMitra Homepage">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12A10 10 0 0 1 12 2z"></path>
+            <path d="M12 6v12"></path>
+            <path d="M8 10c2 0 4-2 4-4"></path>
+            <path d="M16 10c-2 0-4-2-4-4"></path>
+            <path d="M8 15c2 0 4-2 4-5"></path>
+            <path d="M16 15c-2 0-4-2-4-5"></path>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">KrushiMitra</span>
+          <span class="brand-sub">કૃષિમિત્ર • Agriculture Guide</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="crops.html" class="nav-link">Crop Guides</a></li>
+        <li><a href="diseases.html" class="nav-link">Plant Diseases</a></li>
+        <li><a href="medicines.html" class="nav-link">Medicines</a></li>
+        <li><a href="techniques.html" class="nav-link">Techniques</a></li>
+        <li><a href="schemes.html" class="nav-link">Govt Schemes</a></li>
+        <li><a href="articles.html" class="nav-link">Articles</a></li>
+      </ul>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <button type="button" class="btn-icon-nav search-trigger-btn" aria-label="Open Search (Ctrl+K)" title="Quick Search (Ctrl+K)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <button type="button" class="lang-selector-btn" aria-label="Select Language">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <span class="current-lang-text">EN</span>
+          <span style="font-size: 0.65rem; opacity: 0.6;">▼</span>
+        </button>
+
+        <button type="button" class="hamburger-btn" aria-label="Toggle Mobile Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <div class="brand-text">
+        <span class="brand-name" style="font-size: 1.25rem;">KrushiMitra</span>
+        <span class="brand-sub">કૃષિમિત્ર પોર્ટલ</span>
+      </div>
+      <button class="drawer-close-btn" aria-label="Close Mobile Menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="nav-link active"><span>🏡</span> Home</a></li>
+      <li><a href="crops.html" class="nav-link"><span>🌾</span> Crop Guides</a></li>
+      <li><a href="diseases.html" class="nav-link"><span>🔬</span> Plant Diseases & Pests</a></li>
+      <li><a href="medicines.html" class="nav-link"><span>🧪</span> Agri Medicines & IPM</a></li>
+      <li><a href="techniques.html" class="nav-link"><span>🚜</span> Modern Techniques</a></li>
+      <li><a href="schemes.html" class="nav-link"><span>🏛️</span> Government Schemes</a></li>
+      <li><a href="articles.html" class="nav-link"><span>📰</span> Agricultural Articles</a></li>
+      <li><a href="about.html" class="nav-link"><span>📖</span> About KrushiMitra</a></li>
+      <li><a href="contact.html" class="nav-link"><span>📞</span> Contact & Advisory</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <button class="btn btn-primary btn-sm search-trigger-btn" style="width: 100%; margin-bottom: 10px;">
+        🔍 Search Agri Catalog
+      </button>
+      <p style="font-size: 0.75rem; color: var(--color-text-muted); text-align: center;">
+        Toll-Free Helpline: 1800-180-1551
+      </p>
+    </div>
+  </aside>
+
+  <!-- Search Modal -->
+  <div class="search-modal" role="dialog" aria-modal="true" aria-label="Agricultural Knowledge Search">
+    <div class="search-card">
+      <div class="search-card-header">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" class="search-input-field" placeholder="Search crops, pests, medicines, schemes, fertilizers..." aria-label="Search agriculture catalog">
+        <button class="search-card-close" aria-label="Close search">&times;</button>
+      </div>
+      <div class="search-quick-tags">
+        <span class="quick-tag-label">Popular:</span>
+        <button type="button" class="quick-tag-btn" data-tag="Cotton">Cotton (કપાસ)</button>
+        <button type="button" class="quick-tag-btn" data-tag="Groundnut">Groundnut (મગફળી)</button>
+        <button type="button" class="quick-tag-btn" data-tag="Bollworm">Pink Bollworm</button>
+        <button type="button" class="quick-tag-btn" data-tag="PM-Kisan">PM-KISAN</button>
+        <button type="button" class="quick-tag-btn" data-tag="Cumin">Cumin (જીરું)</button>
+        <button type="button" class="quick-tag-btn" data-tag="Drip">Drip Irrigation</button>
+      </div>
+      <div class="search-results-area">
+        <!-- Live search results injected by search.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Language Modal -->
+  <div class="lang-modal" role="dialog" aria-modal="true" aria-label="Select Language">
+    <div class="lang-card">
+      <div class="lang-card-header">
+        <h3 style="font-size: 1.2rem; color: var(--color-forest);">Select Preferred Language</h3>
+        <button class="lang-modal-close drawer-close-btn">&times;</button>
+      </div>
+      <div class="lang-option-list">
+        <button type="button" class="lang-opt-btn active" data-lang="en">
+          <div>
+            <span class="lang-opt-title">English</span>
+            <span class="lang-opt-native">Default Scientific & Agricultural English</span>
+          </div>
+          <span>✓</span>
+        </button>
+        <button type="button" class="lang-opt-btn" data-lang="gu">
+          <div>
+            <span class="lang-opt-title">ગુજરાતી (Gujarati)</span>
+            <span class="lang-opt-native">ગુજરાતના ખેડૂતો માટે સ્થાનિક ભાષા</span>
+          </div>
+          <span style="font-size: 0.8rem; color: var(--color-leaf);">પ્રાદેશિક</span>
+        </button>
+        <button type="button" class="lang-opt-btn" data-lang="hi">
+          <div>
+            <span class="lang-opt-title">हिन्दी (Hindi)</span>
+            <span class="lang-opt-native">भारतीय किसानों के लिए राष्ट्रभाषा</span>
+          </div>
+          <span style="font-size: 0.8rem; color: var(--color-leaf);">क्षेत्रीय</span>
+        </button>
+      </div>
+      <div class="lang-disclaimer-note">
+        <strong>Notice:</strong> Multilingual interface is an interactive demonstration. Botanical terms, active pesticide ingredients, and registered dosages retain standardized Indian CIBRC nomenclature.
+      </div>
+    </div>
+  </div>
+
+  <main id="mainContent">
+    <!-- Hero Section -->
+    <section class="hero-section" style="position: relative; background: linear-gradient(115deg, rgba(15,52,36,0.92) 0%, rgba(23,76,53,0.85) 55%, rgba(46,125,50,0.65) 100%), url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1600&auto=format&fit=crop&q=80') center/cover no-repeat; color: #FFFFFF; padding: 90px 0 100px; min-height: 85vh; display: flex; align-items: center;">
+      <div class="container" style="position: relative; z-index: 2;">
+        <div style="max-width: 720px;">
+          <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(228, 184, 90, 0.2); border: 1px solid rgba(228, 184, 90, 0.45); padding: 6px 14px; border-radius: var(--radius-pill); margin-bottom: 20px;">
+            <span style="width: 8px; height: 8px; border-radius: 50%; background-color: var(--color-gold);"></span>
+            <span style="font-size: 0.825rem; font-weight: 700; color: #FFE8A3; letter-spacing: 0.05em; text-transform: uppercase;">
+              Verified Agricultural Guidance for Indian Farmers
+            </span>
+          </div>
+
+          <h1 style="color: #FFFFFF; font-size: clamp(2.4rem, 5vw, 3.8rem); line-height: 1.15; margin-bottom: 22px; font-weight: 700;">
+            Better Farming Starts With <span style="color: var(--color-gold); font-style: italic;">Better Knowledge.</span>
+          </h1>
+
+          <p style="font-size: 1.15rem; color: #E3EDE6; line-height: 1.7; margin-bottom: 32px; max-width: 640px;">
+            Empowering farmers with practical, scientifically grounded crop schedules, authentic pest identification, label-approved pesticide safety, and direct links to official government assistance schemes.
+          </p>
+
+          <!-- Primary CTA Buttons -->
+          <div class="hero-btn-group" style="display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 40px;">
+            <a href="crops.html" class="btn btn-gold btn-lg">
+              <span>🌾 Explore Crop Guides</span>
+            </a>
+            <a href="diseases.html" class="btn btn-outline-white btn-lg">
+              <span>🔍 Identify a Crop Problem</span>
+            </a>
+          </div>
+
+          <!-- Hero Quick Search Bar -->
+          <div style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); border-radius: var(--radius-pill); padding: 6px 8px 6px 20px; display: flex; align-items: center; max-width: 580px; box-shadow: 0 10px 30px rgba(0,0,0,0.25);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFE8A3" stroke-width="2" style="margin-right: 12px; flex-shrink: 0;">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" class="hero-search-input" placeholder="Search Cotton, Groundnut, Powdery Mildew, PM-Kisan..." style="background: transparent; border: none; color: #FFFFFF; width: 100%; font-size: 0.95rem;" aria-label="Hero search bar">
+            <button type="button" class="btn btn-primary btn-sm hero-search-btn" style="border-radius: var(--radius-pill); white-space: nowrap; padding: 10px 20px;">
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agriculture Core Information Strip -->
+    <section style="background-color: #FFFFFF; border-bottom: 1px solid var(--color-border); padding: 24px 0; box-shadow: var(--shadow-sm);">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">
+          <a href="crops.html" style="display: flex; align-items: center; gap: 14px; padding: 10px 14px; border-radius: var(--radius-md); transition: var(--transition);" onmouseover="this.style.backgroundColor='var(--color-cream)'" onmouseout="this.style.backgroundColor='transparent'">
+            <div style="width: 44px; height: 44px; border-radius: 12px; background-color: rgba(46,125,50,0.12); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0;">
+              🌱
+            </div>
+            <div>
+              <h4 style="font-size: 0.95rem; color: var(--color-forest); font-family: var(--font-sans); font-weight: 700;">Crop Guidance</h4>
+              <p style="font-size: 0.775rem; color: var(--color-text-muted);">From sowing to harvest</p>
+            </div>
+          </a>
+
+          <a href="techniques.html#soil-testing" style="display: flex; align-items: center; gap: 14px; padding: 10px 14px; border-radius: var(--radius-md); transition: var(--transition);" onmouseover="this.style.backgroundColor='var(--color-cream)'" onmouseout="this.style.backgroundColor='transparent'">
+            <div style="width: 44px; height: 44px; border-radius: 12px; background-color: rgba(121,85,72,0.12); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0;">
+              🧪
+            </div>
+            <div>
+              <h4 style="font-size: 0.95rem; color: var(--color-forest); font-family: var(--font-sans); font-weight: 700;">Soil Health</h4>
+              <p style="font-size: 0.775rem; color: var(--color-text-muted);">Sampling & testing guide</p>
+            </div>
+          </a>
+
+          <a href="diseases.html" style="display: flex; align-items: center; gap: 14px; padding: 10px 14px; border-radius: var(--radius-md); transition: var(--transition);" onmouseover="this.style.backgroundColor='var(--color-cream)'" onmouseout="this.style.backgroundColor='transparent'">
+            <div style="width: 44px; height: 44px; border-radius: 12px; background-color: rgba(217,119,6,0.12); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0;">
+              🔬
+            </div>
+            <div>
+              <h4 style="font-size: 0.95rem; color: var(--color-forest); font-family: var(--font-sans); font-weight: 700;">Plant Protection</h4>
+              <p style="font-size: 0.775rem; color: var(--color-text-muted);">Integrated pest management</p>
+            </div>
+          </a>
+
+          <a href="techniques.html#drip-irrigation" style="display: flex; align-items: center; gap: 14px; padding: 10px 14px; border-radius: var(--radius-md); transition: var(--transition);" onmouseover="this.style.backgroundColor='var(--color-cream)'" onmouseout="this.style.backgroundColor='transparent'">
+            <div style="width: 44px; height: 44px; border-radius: 12px; background-color: rgba(21,101,192,0.12); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0;">
+              💧
+            </div>
+            <div>
+              <h4 style="font-size: 0.95rem; color: var(--color-forest); font-family: var(--font-sans); font-weight: 700;">Water Management</h4>
+              <p style="font-size: 0.775rem; color: var(--color-text-muted);">Drip & micro-irrigation</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Crops Section (Priority Gujarat Crops) -->
+    <section style="padding: 72px 0;">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 36px; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <span class="section-tagline">Comprehensive Cultivation Profiles</span>
+            <h2 class="section-title">Commonly Cultivated Crops</h2>
+            <p class="section-subtitle">
+              Detailed agronomic practices tailored for Western and Central Indian agro-climatic zones, focusing on Gujarat's agricultural heartlands.
+            </p>
+          </div>
+          <a href="crops.html" class="btn btn-secondary">
+            View All 8 Crops &rarr;
+          </a>
+        </div>
+
+        <div class="grid-cards-3">
+          <!-- Cotton -->
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1594904351111-a072f80b1a71?w=600&auto=format&fit=crop&q=80" alt="Cotton plants with white fluffy bolls in Indian field" loading="lazy">
+              <div class="card-badge-top">
+                <span class="badge badge-season-kharif">Kharif • Cash Crop</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title"><a href="crop-details/cotton.html">Cotton (કપાસ / Kapas)</a></h3>
+              <div class="card-meta">
+                <span>⏱️ 150-180 Days</span>
+                <span>🌱 Deep Black Soil</span>
+                <span>💧 4-5 Irrigations</span>
+              </div>
+              <p class="card-desc">
+                The cornerstone of Gujarat's farming economy. Learn optimal spacing, sucking pest thresholds, bollworm IPM, and defoliation guidelines.
+              </p>
+              <div class="card-footer">
+                <span style="font-size: 0.8rem; color: var(--color-text-light);">Cultivated in Saurashtra & Central Gujarat</span>
+                <a href="crop-details/cotton.html" class="card-link-action">Read Guide &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Groundnut -->
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=600&auto=format&fit=crop&q=80" alt="Freshly harvested groundnut pods with green foliage" loading="lazy">
+              <div class="card-badge-top">
+                <span class="badge badge-season-kharif">Kharif / Summer • Oilseed</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title"><a href="crop-details/groundnut.html">Groundnut (મગફળી / Peanut)</a></h3>
+              <div class="card-meta">
+                <span>⏱️ 105-120 Days</span>
+                <span>🌱 Sandy Loam</span>
+                <span>💧 Pegging Stage Critical</span>
+              </div>
+              <p class="card-desc">
+                Vital edible oilseed crop of Rajkot, Junagadh, and Amreli. Key management includes seed treatment, gypsum application, and Tikka leaf spot control.
+              </p>
+              <div class="card-footer">
+                <span style="font-size: 0.8rem; color: var(--color-text-light);">Primary Saurashtra Region</span>
+                <a href="crop-details/groundnut.html" class="card-link-action">Read Guide &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Wheat -->
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=600&auto=format&fit=crop&q=80" alt="Golden ripe wheat crop ready for harvest" loading="lazy">
+              <div class="card-badge-top">
+                <span class="badge badge-season-rabi">Rabi • Cereal Grain</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title"><a href="crop-details/wheat.html">Wheat (ઘઉં / Gehun)</a></h3>
+              <div class="card-meta">
+                <span>⏱️ 110-125 Days</span>
+                <span>🌱 Loam to Clayey</span>
+                <span>💧 5-6 Critical Stages</span>
+              </div>
+              <p class="card-desc">
+                Winter cereal cultivated widely in Ahmedabad, Mehsana, and Bhal tract (renowned for drought-hardy Daudkhani wheat varieties).
+              </p>
+              <div class="card-footer">
+                <span style="font-size: 0.8rem; color: var(--color-text-light);">Bhal & North Gujarat</span>
+                <a href="crop-details/wheat.html" class="card-link-action">Read Guide &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Rice / Paddy -->
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1536657464919-892534f60d6e?w=600&auto=format&fit=crop&q=80" alt="Lush green terraced paddy field under monsoon clouds" loading="lazy">
+              <div class="card-badge-top">
+                <span class="badge badge-season-kharif">Kharif • Food Grain</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title"><a href="crop-details/rice.html">Rice / Paddy (ડાંગર / Dhan)</a></h3>
+              <div class="card-meta">
+                <span>⏱️ 120-140 Days</span>
+                <span>🌱 Clayey Alluvial</span>
+                <span>💧 Submerged Puddle</span>
+              </div>
+              <p class="card-desc">
+                High-water staple across Kheda, Anand, and Navsari. Includes system of rice intensification (SRI), zinc application, and blast prevention.
+              </p>
+              <div class="card-footer">
+                <span style="font-size: 0.8rem; color: var(--color-text-light);">South & Central Gujarat</span>
+                <a href="crop-details/rice.html" class="card-link-action">Read Guide &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Cumin -->
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=600&auto=format&fit=crop&q=80" alt="Flowering seed heads in agricultural field" loading="lazy">
+              <div class="card-badge-top">
+                <span class="badge badge-season-rabi">Rabi • High-Value Spice</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title"><a href="crop-details/cumin.html">Cumin (જીરું / Jeera)</a></h3>
+              <div class="card-meta">
+                <span>⏱️ 100-115 Days</span>
+                <span>🌱 Well-Drained Loam</span>
+                <span>💧 Light Moisture Only</span>
+              </div>
+              <p class="card-desc">
+                Premium export spice centered around Unjha and Surendranagar. Extreme sensitivity to cloudy weather, powdery mildew, and blight requires vigilant IPM.
+              </p>
+              <div class="card-footer">
+                <span style="font-size: 0.8rem; color: var(--color-text-light);">Patan, Mehsana, Saurashtra</span>
+                <a href="crop-details/cumin.html" class="card-link-action">Read Guide &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Pearl Millet -->
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=600&auto=format&fit=crop&q=80" alt="Millet field stalks with heavy grain spikes" loading="lazy">
+              <div class="card-badge-top">
+                <span class="badge badge-season-kharif">Kharif / Summer • Millet</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title"><a href="crop-details/pearl-millet.html">Pearl Millet (બાજરી / Bajra)</a></h3>
+              <div class="card-meta">
+                <span>⏱️ 75-90 Days</span>
+                <span>🌱 Sandy Arid Soil</span>
+                <span>💧 Low Water Needs</span>
+              </div>
+              <p class="card-desc">
+                Highly nutritious, drought-resilient super grain cultivated widely in Banaskantha and Kutch. Excellent climate adaptation and minimal inputs.
+              </p>
+              <div class="card-footer">
+                <span style="font-size: 0.8rem; color: var(--color-text-light);">Banaskantha & Kutch</span>
+                <a href="crop-details/pearl-millet.html" class="card-link-action">Read Guide &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seasonal Farming Guidance Section -->
+    <section style="background-color: #FFFFFF; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); padding: 72px 0;">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: 36px;">
+          <span class="section-tagline">Agricultural Calendar</span>
+          <h2 class="section-title">Seasonal Farming Operations</h2>
+          <p class="section-subtitle">
+            Timed field activities organized by Indian crop seasons. Timely execution of tillage, seed treatment, and fertilizer placement directly impacts net yield.
+          </p>
+        </div>
+
+        <!-- Season Select Tabs -->
+        <div class="seasonal-tabs-group" style="display: flex; justify-content: center; gap: 10px; margin-bottom: 32px; flex-wrap: wrap;">
+          <button type="button" class="btn btn-secondary seasonal-tab-btn active" data-season="rabi" style="border-radius: var(--radius-pill);">
+            ❄️ Rabi Season (Oct - Mar)
+          </button>
+          <button type="button" class="btn btn-secondary seasonal-tab-btn" data-season="kharif" style="border-radius: var(--radius-pill);">
+            🌧️ Kharif Season (Jun - Oct)
+          </button>
+          <button type="button" class="btn btn-secondary seasonal-tab-btn" data-season="summer" style="border-radius: var(--radius-pill);">
+            ☀️ Zaid / Summer (Feb - May)
+          </button>
+        </div>
+
+        <!-- Rabi Panel -->
+        <div class="seasonal-panel" data-season="rabi" style="display: block;">
+          <div style="background-color: var(--color-cream); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 32px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
+              <div>
+                <h3 style="font-size: 1.45rem; color: var(--color-forest);">Current Season: Rabi Crop Planning & Winter Sowing</h3>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted);">Recommended for Gujarat, Rajasthan, and Western MP belts.</p>
+              </div>
+              <span class="badge badge-season-rabi">Rabi Focus • Active Planning</span>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+              <div style="background-color: #FFFFFF; padding: 20px; border-radius: var(--radius-md); border: 1px solid var(--color-border-light);">
+                <div style="font-size: 1.5rem; margin-bottom: 8px;">🌱</div>
+                <h4 style="font-size: 1rem; color: var(--color-forest); margin-bottom: 6px;">Certified Seed Selection & Fungicide Coating</h4>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.5;">
+                  Always treat wheat seed with Carboxin + Thiram (2g/kg) and cumin seed with Trichoderma viride (10g/kg) against seed-borne wilt and flag smut.
+                </p>
+              </div>
+
+              <div style="background-color: #FFFFFF; padding: 20px; border-radius: var(--radius-md); border: 1px solid var(--color-border-light);">
+                <div style="font-size: 1.5rem; margin-bottom: 8px;">💧</div>
+                <h4 style="font-size: 1rem; color: var(--color-forest); margin-bottom: 6px;">Crown Root Initiation (CRI) Irrigation</h4>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.5;">
+                  First irrigation in wheat must strictly occur 20-25 days after sowing at CRI stage. Missing this irrigation permanently restricts tillering capacity.
+                </p>
+              </div>
+
+              <div style="background-color: #FFFFFF; padding: 20px; border-radius: var(--radius-md); border: 1px solid var(--color-border-light);">
+                <div style="font-size: 1.5rem; margin-bottom: 8px;">⚠️</div>
+                <h4 style="font-size: 1rem; color: var(--color-forest); margin-bottom: 6px;">Cumin Powdery Mildew Vigilance</h4>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.5;">
+                  Inspect umbels during December cool spells. Prophylactic dusting of 300-mesh sulfur powder (25 kg/ha) prevents catastrophic crop loss.
+                </p>
+              </div>
+            </div>
+
+            <!-- Disclaimer note regarding demonstration data -->
+            <div class="callout-box callout-info" style="margin-top: 24px; margin-bottom: 0;">
+              <div>
+                <strong>Sample Educational Advisory:</strong> Sowing dates depend strictly on soil temperature and onset of winter chill. Always confirm local variety selections with your District Agriculture Officer or Krishi Vigyan Kendra (KVK).
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kharif Panel -->
+        <div class="seasonal-panel" data-season="kharif" style="display: none;">
+          <div style="background-color: var(--color-cream); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 32px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
+              <div>
+                <h3 style="font-size: 1.45rem; color: var(--color-forest);">Monsoon Kharif Operations & Drainage</h3>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted);">Cotton, Groundnut, Paddy, and Castor management.</p>
+              </div>
+              <span class="badge badge-season-kharif">Kharif Guide</span>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+              <div style="background-color: #FFFFFF; padding: 20px; border-radius: var(--radius-md); border: 1px solid var(--color-border-light);">
+                <div style="font-size: 1.5rem; margin-bottom: 8px;">🚜</div>
+                <h4 style="font-size: 1rem; color: var(--color-forest); margin-bottom: 6px;">Deep Summer Ploughing</h4>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.5;">
+                  Expose soil to intense May-June heat to destroy hibernating pupae of cotton bollworm and soil-borne fungal spores naturally.
+                </p>
+              </div>
+
+              <div style="background-color: #FFFFFF; padding: 20px; border-radius: var(--radius-md); border: 1px solid var(--color-border-light);">
+                <div style="font-size: 1.5rem; margin-bottom: 8px;">🌧️</div>
+                <h4 style="font-size: 1rem; color: var(--color-forest); margin-bottom: 6px;">Sowing After 75-100mm Rainfall</h4>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.5;">
+                  Avoid pre-monsoon dry sowing in non-irrigated black soils. Wait until soil moisture penetrates at least 15-20 cm deep.
+                </p>
+              </div>
+
+              <div style="background-color: #FFFFFF; padding: 20px; border-radius: var(--radius-md); border: 1px solid var(--color-border-light);">
+                <div style="font-size: 1.5rem; margin-bottom: 8px;">🪱</div>
+                <h4 style="font-size: 1rem; color: var(--color-forest); margin-bottom: 6px;">White Grub Soil Treatment</h4>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.5;">
+                  In groundnut endemic tracts, treat seed with Imidacloprid 600 FS or incorporate Beauveria bassiana bio-agent in farmyard manure.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Summer Panel -->
+        <div class="seasonal-panel" data-season="summer" style="display: none;">
+          <div style="background-color: var(--color-cream); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 32px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
+              <div>
+                <h3 style="font-size: 1.45rem; color: var(--color-forest);">Summer (Zaid) Short-Duration Crops</h3>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted);">Summer Bajra, Moong (Green Gram), and Summer Groundnut.</p>
+              </div>
+              <span class="badge badge-season-summer">Summer Guide</span>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+              <div style="background-color: #FFFFFF; padding: 20px; border-radius: var(--radius-md); border: 1px solid var(--color-border-light);">
+                <div style="font-size: 1.5rem; margin-bottom: 8px;">☀️</div>
+                <h4 style="font-size: 1rem; color: var(--color-forest); margin-bottom: 6px;">Irrigation In Peak Evaporation</h4>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.5;">
+                  Schedule micro-irrigation in early mornings or evenings to curb water evaporation losses by over 30% during hot summer winds.
+                </p>
+              </div>
+
+              <div style="background-color: #FFFFFF; padding: 20px; border-radius: var(--radius-md); border: 1px solid var(--color-border-light);">
+                <div style="font-size: 1.5rem; margin-bottom: 8px;">🌿</div>
+                <h4 style="font-size: 1rem; color: var(--color-forest); margin-bottom: 6px;">Moong as Soil Enhancer</h4>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.5;">
+                  Cultivate 60-day summer green gram (moong) after wheat harvest. Fixes up to 40 kg biological nitrogen per hectare for the upcoming kharif crop.
+                </p>
+              </div>
+
+              <div style="background-color: #FFFFFF; padding: 20px; border-radius: var(--radius-md); border: 1px solid var(--color-border-light);">
+                <div style="font-size: 1.5rem; margin-bottom: 8px;">🌾</div>
+                <h4 style="font-size: 1rem; color: var(--color-forest); margin-bottom: 6px;">Summer Pearl Millet (Bajra)</h4>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.5;">
+                  High grain recovery with reduced ergot infection due to dry air. Ensure moisture during boot and grain-filling stages.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Plant Disease & Pest Identification Section -->
+    <section style="padding: 72px 0;">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 36px; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <span class="section-tagline">Early Diagnosis & Protection</span>
+            <h2 class="section-title">Common Crop Diseases & Pests</h2>
+            <p class="section-subtitle">
+              Accurate symptom recognition prevents unneeded chemical sprays. Always corroborate visual symptoms with agricultural officers before applying systemic compounds.
+            </p>
+          </div>
+          <a href="diseases.html" class="btn btn-secondary">
+            View Complete Disease Library &rarr;
+          </a>
+        </div>
+
+        <div class="grid-cards-3">
+          <!-- Cotton Bollworm -->
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=600&auto=format&fit=crop&q=80" alt="Insect larvae feeding on crop plant" loading="lazy">
+              <div class="card-badge-top">
+                <span class="badge badge-caution">Pest • High Impact</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title"><a href="diseases.html#bollworm">Pink & American Bollworm</a></h3>
+              <div class="card-meta">
+                <span>Affected: Cotton, Okra</span>
+                <span>Type: Larval Borer</span>
+              </div>
+              <p class="card-desc">
+                Larvae enter young squares and bolls, plugging entry holes with frass. Causes rosette flowers, boll rotting, and stained unmarketable lint.
+              </p>
+              <div class="card-footer">
+                <span style="font-size: 0.8rem; color: var(--color-text-light);">Use Pheromone Traps (5/ha)</span>
+                <a href="diseases.html#bollworm" class="card-link-action">Inspect Symptoms &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Aphids -->
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=600&auto=format&fit=crop&q=80" alt="Plant foliage infested by tiny sap-sucking insects" loading="lazy">
+              <div class="card-badge-top">
+                <span class="badge" style="background-color: #FFF3E0; color: #D97706;">Sucking Pest</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title"><a href="diseases.html#aphids">Aphids (મોલો-મશી / Molo)</a></h3>
+              <div class="card-meta">
+                <span>Affected: Cumin, Mustard, Cotton</span>
+                <span>Type: Homopteran</span>
+              </div>
+              <p class="card-desc">
+                Colonies cluster under leaves and on young inflorescences, sucking vital sap. Secretes sticky honeydew attracting black sooty mold fungus.
+              </p>
+              <div class="card-footer">
+                <span style="font-size: 0.8rem; color: var(--color-text-light);">Early Spray: Neem Oil 10,000 PPM</span>
+                <a href="diseases.html#aphids" class="card-link-action">Inspect Symptoms &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Powdery Mildew -->
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?w=600&auto=format&fit=crop&q=80" alt="White fungal talcum-like patches covering green plant leaves" loading="lazy">
+              <div class="card-badge-top">
+                <span class="badge" style="background-color: #EDE7F6; color: #512DA8;">Fungal Disease</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title"><a href="diseases.html#powdery-mildew">Powdery Mildew (છારો રોગ)</a></h3>
+              <div class="card-meta">
+                <span>Affected: Cumin, Coriander, Vegetables</span>
+                <span>Type: Erysiphales</span>
+              </div>
+              <p class="card-desc">
+                White talcum powder-like mycelial patches emerge on leaves, stems, and flower umbels. Leads to seed shriveling and near-total crop loss in cumin.
+              </p>
+              <div class="card-footer">
+                <span style="font-size: 0.8rem; color: var(--color-text-light);">Preventive: Wettable Sulfur 80% WP</span>
+                <a href="diseases.html#powdery-mildew" class="card-link-action">Inspect Symptoms &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agricultural Medicines & Strict Safety Section -->
+    <section style="background-color: #FFFFFF; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); padding: 72px 0;">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 28px; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <span class="section-tagline">Chemical Label Compliance</span>
+            <h2 class="section-title">Approved Agricultural Medicines</h2>
+            <p class="section-subtitle">
+              Official information referenced from Central Insecticide Board & Registration Committee (CIBRC) labels. Adhere to statutory safety intervals.
+            </p>
+          </div>
+          <a href="medicines.html" class="btn btn-secondary">
+            Browse Medicine Directory &rarr;
+          </a>
+        </div>
+
+        <!-- Strict Statutory Medicine Warning Banner -->
+        <div class="callout-box callout-danger" style="margin-bottom: 32px;">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+            <line x1="12" y1="9" x2="12" y2="13"></line>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+          <div>
+            <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 4px; color: var(--color-danger);">
+              CRITICAL PESTICIDE SAFETY & LEGAL COMPLIANCE NOTICE
+            </h4>
+            <p style="font-size: 0.85rem; line-height: 1.5; color: #5C1D1D;">
+              Never spray without complete Personal Protective Equipment (gloves, eye goggles, N95 respiratory mask, full boots). Always follow the registered container label approved by the CIBRC. Keep all agro-chemicals securely locked away from children, livestock, and open water bodies. Dosage depends strictly on crop stage, spray volume, and variety.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-cards-3">
+          <!-- Neem Oil -->
+          <article class="card">
+            <div class="card-content">
+              <span class="badge" style="background-color: #E8F5E9; color: #2E7D32; margin-bottom: 12px; width: fit-content;">Bio-Pesticide • Organic Approved</span>
+              <h3 class="card-title" style="font-size: 1.25rem;"><a href="medicines.html#neem-oil">Neem Oil 10,000 PPM (Azadirachtin 1%)</a></h3>
+              <p style="font-size: 0.8rem; color: var(--color-text-light); margin-bottom: 10px;">Botanical Anti-feedant & Oviposition Deterrent</p>
+              <p class="card-desc">
+                Ideal for sucking pest suppression (aphids, whiteflies, thrips) and early caterpillar instars. Harmless to predatory honeybees and beneficial spiders.
+              </p>
+              <div style="background-color: var(--color-cream); padding: 12px; border-radius: var(--radius-sm); font-size: 0.8rem; margin-bottom: 14px;">
+                <strong>PHI:</strong> 0-3 Days • <strong>Crops:</strong> Cotton, Cumin, Vegetables
+              </div>
+              <div class="card-footer">
+                <span class="badge badge-verified">✓ Eco-Friendly</span>
+                <a href="medicines.html#neem-oil" class="card-link-action">Label Info &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Imidacloprid -->
+          <article class="card">
+            <div class="card-content">
+              <span class="badge" style="background-color: #E3F2FD; color: #1565C0; margin-bottom: 12px; width: fit-content;">Systemic Insecticide</span>
+              <h3 class="card-title" style="font-size: 1.25rem;"><a href="medicines.html#imidacloprid">Imidacloprid 17.8% SL</a></h3>
+              <p style="font-size: 0.8rem; color: var(--color-text-light); margin-bottom: 10px;">Neonicotinoid Systemic Compound</p>
+              <p class="card-desc">
+                Label registered for severe sucking pest outbreaks in cotton and paddy. Translocates acropetally through plant xylem tissues.
+              </p>
+              <div style="background-color: var(--color-cream); padding: 12px; border-radius: var(--radius-sm); font-size: 0.8rem; margin-bottom: 14px;">
+                <strong>Caution:</strong> Highly toxic to pollinating honeybees. Avoid spraying during active flowering periods.
+              </div>
+              <div class="card-footer">
+                <span class="badge badge-caution">⚠ Follow Exact Label</span>
+                <a href="medicines.html#imidacloprid" class="card-link-action">Label Info &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Mancozeb -->
+          <article class="card">
+            <div class="card-content">
+              <span class="badge" style="background-color: #EDE7F6; color: #512DA8; margin-bottom: 12px; width: fit-content;">Contact Fungicide</span>
+              <h3 class="card-title" style="font-size: 1.25rem;"><a href="medicines.html#mancozeb">Mancozeb 75% WP</a></h3>
+              <p style="font-size: 0.8rem; color: var(--color-text-light); margin-bottom: 10px;">Dithiocarbamate Multi-Site Inhibitor</p>
+              <p class="card-desc">
+                Reliable preventive contact fungicide protecting against Tikka leaf spot in groundnut, early blight, and downy mildew across multiple crops.
+              </p>
+              <div style="background-color: var(--color-cream); padding: 12px; border-radius: var(--radius-sm); font-size: 0.8rem; margin-bottom: 14px;">
+                <strong>Re-entry:</strong> 24 Hours • <strong>Application:</strong> Prior to disease sporulation
+              </div>
+              <div class="card-footer">
+                <span class="badge badge-verified">✓ Broad Spectrum</span>
+                <a href="medicines.html#mancozeb" class="card-link-action">Label Info &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Practical Modern Farming Techniques -->
+    <section style="padding: 72px 0;">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 36px; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <span class="section-tagline">Sustainable Agronomy</span>
+            <h2 class="section-title">Practical Farming Techniques</h2>
+            <p class="section-subtitle">
+              Resource-efficient methodologies designed to lower farmer input costs, conserve groundwater, and restore biological soil fertility.
+            </p>
+          </div>
+          <a href="techniques.html" class="btn btn-secondary">
+            Explore All 10 Techniques &rarr;
+          </a>
+        </div>
+
+        <div class="grid-cards-4">
+          <div class="card" style="padding: 24px; text-align: left;">
+            <div style="font-size: 2rem; margin-bottom: 12px;">💧</div>
+            <h3 style="font-size: 1.15rem; color: var(--color-forest); margin-bottom: 8px;">Drip Irrigation</h3>
+            <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.5; margin-bottom: 16px;">
+              Saves up to 60% irrigation water in row crops like cotton and groundnut while enabling precision fertilizer application via venturi fertigation.
+            </p>
+            <a href="techniques.html#drip-irrigation" class="card-link-action" style="margin-top: auto;">Step-by-Step &rarr;</a>
+          </div>
+
+          <div class="card" style="padding: 24px; text-align: left;">
+            <div style="font-size: 2rem; margin-bottom: 12px;">🧪</div>
+            <h3 style="font-size: 1.15rem; color: var(--color-forest); margin-bottom: 8px;">Soil Testing & Sampling</h3>
+            <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.5; margin-bottom: 16px;">
+              Scientific zig-zag V-shape field sampling ensures farmers apply only required NPK and micronutrients, curbing expensive fertilizer overuse.
+            </p>
+            <a href="techniques.html#soil-testing" class="card-link-action" style="margin-top: auto;">Sampling Guide &rarr;</a>
+          </div>
+
+          <div class="card" style="padding: 24px; text-align: left;">
+            <div style="font-size: 2rem; margin-bottom: 12px;">🔄</div>
+            <h3 style="font-size: 1.15rem; color: var(--color-forest); margin-bottom: 8px;">Legume Crop Rotation</h3>
+            <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.5; margin-bottom: 16px;">
+              Alternating deep-rooted cotton with shallow-rooted groundnut or pulses breaks pest cycles and naturally fixes biological atmospheric nitrogen.
+            </p>
+            <a href="techniques.html#crop-rotation" class="card-link-action" style="margin-top: auto;">Rotation Cycles &rarr;</a>
+          </div>
+
+          <div class="card" style="padding: 24px; text-align: left;">
+            <div style="font-size: 2rem; margin-bottom: 12px;">🪱</div>
+            <h3 style="font-size: 1.15rem; color: var(--color-forest); margin-bottom: 8px;">Vermicomposting</h3>
+            <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.5; margin-bottom: 16px;">
+              Recycling farm biomass and cow dung using Eisenia fetida earthworms to generate nutrient-rich black compost in 45-60 days.
+            </p>
+            <a href="techniques.html#vermicompost" class="card-link-action" style="margin-top: auto;">Bed Setup &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Government Schemes & Farmer Services -->
+    <section style="background-color: var(--color-cream-alt); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); padding: 72px 0;">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 36px; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <span class="section-tagline">Direct Benefit Transfer & Subsidies</span>
+            <h2 class="section-title">Government Schemes & Farmer Services</h2>
+            <p class="section-subtitle">
+              Verified official programs from the Ministry of Agriculture & Farmers Welfare and Gujarat State Department. No third-party intermediaries.
+            </p>
+          </div>
+          <a href="schemes.html" class="btn btn-secondary">
+            View All Government Schemes &rarr;
+          </a>
+        </div>
+
+        <div class="grid-cards-3">
+          <!-- PM-KISAN -->
+          <article class="card">
+            <div class="card-content">
+              <span class="badge" style="background-color: #E3F2FD; color: #1565C0; margin-bottom: 10px; width: fit-content;">Central Scheme • DBT</span>
+              <h3 class="card-title" style="font-size: 1.3rem;"><a href="schemes.html#pm-kisan">PM-KISAN Samman Nidhi</a></h3>
+              <p class="card-desc">
+                Direct income support of ₹6,000 per year transferred directly to Aadhaar-linked bank accounts of landholder farmer families in 3 installments of ₹2,000.
+              </p>
+              <div style="margin-bottom: 16px; font-size: 0.825rem; color: var(--color-text-muted);">
+                <strong>Official Portal:</strong> pmkisan.gov.in • eKYC Mandatory
+              </div>
+              <div class="card-footer">
+                <a href="https://pmkisan.gov.in" target="_blank" rel="noopener noreferrer" class="card-link-action" style="color: var(--color-info);">
+                  Official Portal &#8599;
+                </a>
+                <a href="schemes.html#pm-kisan" class="card-link-action">Eligibility Details &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PMFBY -->
+          <article class="card">
+            <div class="card-content">
+              <span class="badge" style="background-color: #FFF8E1; color: #F57F17; margin-bottom: 10px; width: fit-content;">Crop Insurance</span>
+              <h3 class="card-title" style="font-size: 1.3rem;"><a href="schemes.html#pmfby">PM Fasal Bima Yojana (PMFBY)</a></h3>
+              <p class="card-desc">
+                Comprehensive insurance protection against non-preventable natural calamities (drought, flood, unseasonal hail). 2% Kharif premium, 1.5% Rabi premium.
+              </p>
+              <div style="margin-bottom: 16px; font-size: 0.825rem; color: var(--color-text-muted);">
+                <strong>Official Portal:</strong> pmfby.gov.in • 72-hour claim notification
+              </div>
+              <div class="card-footer">
+                <a href="https://pmfby.gov.in" target="_blank" rel="noopener noreferrer" class="card-link-action" style="color: var(--color-info);">
+                  Official Portal &#8599;
+                </a>
+                <a href="schemes.html#pmfby" class="card-link-action">Claim Process &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- i-Khedut Portal -->
+          <article class="card">
+            <div class="card-content">
+              <span class="badge" style="background-color: #E8F5E9; color: #2E7D32; margin-bottom: 10px; width: fit-content;">Gujarat State Scheme Portal</span>
+              <h3 class="card-title" style="font-size: 1.3rem;"><a href="schemes.html#ikhedut">Gujarat i-Khedut Portal</a></h3>
+              <p class="card-desc">
+                Single unified web portal by the Government of Gujarat for agricultural equipment subsidies, micro-irrigation (GGRC) grants, certified seeds, and water pumps.
+              </p>
+              <div style="margin-bottom: 16px; font-size: 0.825rem; color: var(--color-text-muted);">
+                <strong>Portal:</strong> ikhedut.gujarat.gov.in • 7/12 & 8-A required
+              </div>
+              <div class="card-footer">
+                <a href="https://ikhedut.gujarat.gov.in" target="_blank" rel="noopener noreferrer" class="card-link-action" style="color: var(--color-info);">
+                  State Portal &#8599;
+                </a>
+                <a href="schemes.html#ikhedut" class="card-link-action">Application Steps &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Agriculture Articles -->
+    <section style="padding: 72px 0;">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 36px; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <span class="section-tagline">Field Experience & Research</span>
+            <h2 class="section-title">Latest Agricultural Articles</h2>
+            <p class="section-subtitle">
+              In-depth advisories on soil nutrition, water preservation, and seasonal post-harvest safety.
+            </p>
+          </div>
+          <a href="articles.html" class="btn btn-secondary">
+            View All Articles &rarr;
+          </a>
+        </div>
+
+        <div class="grid-cards-3">
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=600&auto=format&fit=crop&q=80" alt="Tilled agricultural soil with moisture under sunlight" loading="lazy">
+            </div>
+            <div class="card-content">
+              <span class="badge" style="background-color: var(--color-cream); color: var(--color-forest); margin-bottom: 8px; width: fit-content;">Pre-Monsoon Agronomy</span>
+              <h3 class="card-title" style="font-size: 1.2rem;"><a href="articles.html#pre-monsoon-prep">Pre-Monsoon Land Preparation for Kharif Crops</a></h3>
+              <p class="card-desc">
+                A step-by-step checklist on summer deep tilling, decomposed FYM incorporation, and certified seed procurement prior to monsoon arrival.
+              </p>
+              <div class="card-footer">
+                <span style="font-size: 0.8rem; color: var(--color-text-light);">6 min read • Seasonal Guide</span>
+                <a href="articles.html#pre-monsoon-prep" class="card-link-action">Read Article &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?w=600&auto=format&fit=crop&q=80" alt="Micro drip irrigation line wetting soil around crop rootzone" loading="lazy">
+            </div>
+            <div class="card-content">
+              <span class="badge" style="background-color: var(--color-cream); color: var(--color-forest); margin-bottom: 8px; width: fit-content;">Water Efficiency</span>
+              <h3 class="card-title" style="font-size: 1.2rem;"><a href="articles.html#drip-maintenance">Preventing Drip Emitter Clogging in Hard Groundwater</a></h3>
+              <p class="card-desc">
+                Routine acid treatment protocols and sand filter backwashing practices to keep drip laterals unclogged in high TDS Saurashtra borewells.
+              </p>
+              <div class="card-footer">
+                <span style="font-size: 0.8rem; color: var(--color-text-light);">5 min read • Irrigation Guide</span>
+                <a href="articles.html#drip-maintenance" class="card-link-action">Read Article &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?w=600&auto=format&fit=crop&q=80" alt="Farmer checking grain quality in clean storage warehouse" loading="lazy">
+            </div>
+            <div class="card-content">
+              <span class="badge" style="background-color: var(--color-cream); color: var(--color-forest); margin-bottom: 8px; width: fit-content;">Post-Harvest</span>
+              <h3 class="card-title" style="font-size: 1.2rem;"><a href="articles.html#grain-storage">Moisture Control & Safe Grain Storage Without Toxins</a></h3>
+              <p class="card-desc">
+                Target moisture percentages (under 10% for wheat, 8% for cumin) and hermetic storage bags to eliminate storage weevil attacks without hazardous fumigants.
+              </p>
+              <div class="card-footer">
+                <span style="font-size: 0.8rem; color: var(--color-text-light);">7 min read • Storage Guide</span>
+                <a href="articles.html#grain-storage" class="card-link-action">Read Article &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Weekly Farming Advisory Newsletter Subscription (Client-Side Validated) -->
+    <section style="background: linear-gradient(135deg, var(--color-forest-dark) 0%, var(--color-forest) 100%); color: #FFFFFF; padding: 64px 0;">
+      <div class="container">
+        <div style="max-width: 680px; margin: 0 auto; text-align: center;">
+          <span style="color: var(--color-gold); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; display: inline-block; margin-bottom: 10px;">
+            Free Weekly Agricultural Advisory
+          </span>
+          <h2 style="color: #FFFFFF; font-size: clamp(1.8rem, 3.5vw, 2.5rem); margin-bottom: 14px;">
+            Receive Timely Crop & Weather Advisories
+          </h2>
+          <p style="color: #D1DDD5; font-size: 0.975rem; margin-bottom: 28px; line-height: 1.6;">
+            Get verified alerts on seasonal pest emergence thresholds, irrigation timing, and newly announced state subsidy windows directly in your inbox.
+          </p>
+
+          <form class="newsletter-form" style="display: flex; gap: 10px; max-width: 520px; margin: 0 auto 16px; flex-wrap: wrap;" novalidate>
+            <input type="email" class="form-control" placeholder="Enter your email address (e.g., kisan@gmail.com)" style="flex: 1; min-width: 260px; background-color: #FFFFFF; border-radius: var(--radius-pill);" aria-label="Email address for advisory subscription">
+            <button type="submit" class="btn btn-gold" style="border-radius: var(--radius-pill); white-space: nowrap;">
+              Subscribe Free
+            </button>
+          </form>
+
+          <p style="font-size: 0.775rem; color: #A3B8A8;">
+            🔒 <em>Educational client-side demonstration:</em> We respect farmer privacy. No spam, and no personal data is transmitted without backend integration.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Comprehensive Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 16px;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12A10 10 0 0 1 12 2z"></path>
+                <path d="M12 6v12"></path>
+                <path d="M8 10c2 0 4-2 4-4"></path>
+                <path d="M16 10c-2 0-4-2-4-4"></path>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">KrushiMitra</span>
+              <span class="brand-sub">Smart Farming Guidance Portal</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            An open educational platform dedicated to Indian farmers, providing scientifically grounded crop guidance, safe chemical pesticide stewardship, and verified government portal access.
+          </p>
+          <div class="footer-helpline">
+            <div class="footer-helpline-title">National Kisan Call Centre (Toll-Free)</div>
+            <span class="footer-helpline-number">1800-180-1551</span>
+            <span style="font-size: 0.75rem; color: #B4C4B8;">Operated by Ministry of Agriculture, Govt. of India (6 AM - 10 PM)</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Crop Cultivation</h4>
+          <ul class="footer-links">
+            <li><a href="crop-details/cotton.html">Cotton (કપાસ) Guide</a></li>
+            <li><a href="crop-details/groundnut.html">Groundnut (મગફળી) Guide</a></li>
+            <li><a href="crop-details/wheat.html">Wheat (ઘઉં) Guide</a></li>
+            <li><a href="crop-details/rice.html">Rice / Paddy (ડાંગર) Guide</a></li>
+            <li><a href="crop-details/cumin.html">Cumin (જીરું) Guide</a></li>
+            <li><a href="crop-details/castor.html">Castor (દિવેલા) Guide</a></li>
+            <li><a href="crop-details/pearl-millet.html">Pearl Millet (બાજરી)</a></li>
+            <li><a href="crop-details/maize.html">Maize (મકાઈ) Guide</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Protection & Techniques</h4>
+          <ul class="footer-links">
+            <li><a href="diseases.html#bollworm">Pink Bollworm IPM</a></li>
+            <li><a href="diseases.html#aphids">Aphids & Sucking Pests</a></li>
+            <li><a href="diseases.html#powdery-mildew">Powdery Mildew Control</a></li>
+            <li><a href="medicines.html">Pesticide Safety & Labels</a></li>
+            <li><a href="techniques.html#drip-irrigation">Drip Irrigation Setup</a></li>
+            <li><a href="techniques.html#soil-testing">Soil Health Card Protocol</a></li>
+            <li><a href="techniques.html#vermicompost">Vermicompost Production</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Official Resources</h4>
+          <ul class="footer-links">
+            <li><a href="https://pmkisan.gov.in" target="_blank" rel="noopener noreferrer">PM-KISAN Portal &#8599;</a></li>
+            <li><a href="https://pmfby.gov.in" target="_blank" rel="noopener noreferrer">PM Fasal Bima (PMFBY) &#8599;</a></li>
+            <li><a href="https://soilhealth.dac.gov.in" target="_blank" rel="noopener noreferrer">Soil Health Card Portal &#8599;</a></li>
+            <li><a href="https://enam.gov.in" target="_blank" rel="noopener noreferrer">e-NAM Mandi Prices &#8599;</a></li>
+            <li><a href="https://ikhedut.gujarat.gov.in" target="_blank" rel="noopener noreferrer">Gujarat i-Khedut Portal &#8599;</a></li>
+            <li><a href="about.html">About & Mission</a></li>
+            <li><a href="contact.html">Contact & Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Statutory Agricultural Disclaimer Strip -->
+      <div class="footer-disclaimer-strip">
+        <strong>Important Agricultural & Legal Disclaimer:</strong> KrushiMitra is an educational guidance portal based on published agronomic research from ICAR, Anand Agricultural University (AAU), Junagadh Agricultural University (JAU), and CIBRC approved labels. Weather variations, soil chemistry, seed varieties, and local conditions significantly alter farm outcomes. This portal does not replace personalized field recommendations from your local Gram Sevak, Krishi Vigyan Kendra, or qualified Agricultural Officer. Never apply restricted agro-chemicals without verifying the physical container label.
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 KrushiMitra (કૃષિમિત્ર). Built with HTML5, CSS3, & Vanilla JavaScript.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="disclaimer.html">Agricultural Disclaimer</a>
+          <a href="about.html">About Platform</a>
+          <a href="contact.html">Help & Advisory</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top-btn" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- JavaScript Files -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/forms.js"></script>
+</body>
+</html>

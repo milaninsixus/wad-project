@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agricultural Medicines & Chemical Safety Directory — KrushiMitra</title>
+  <meta name="description" content="Verified agriculture medicine directory based on CIBRC labels: Insecticides, fungicides, herbicides, and bio-pesticides. Label application, PPE, PHI, and environmental safety precautions.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12A10 10 0 0 1 12 2z"></path>
+            <path d="M12 6v12"></path>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">KrushiMitra</span>
+          <span class="brand-sub">કૃષિમિત્ર • Medicine Directory</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="crops.html" class="nav-link">Crop Guides</a></li>
+        <li><a href="diseases.html" class="nav-link">Plant Diseases</a></li>
+        <li><a href="medicines.html" class="nav-link active">Medicines</a></li>
+        <li><a href="techniques.html" class="nav-link">Techniques</a></li>
+        <li><a href="schemes.html" class="nav-link">Govt Schemes</a></li>
+        <li><a href="articles.html" class="nav-link">Articles</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button type="button" class="btn-icon-nav search-trigger-btn" aria-label="Open Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+        <button type="button" class="lang-selector-btn"><span class="current-lang-text">EN</span></button>
+        <button type="button" class="hamburger-btn"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-nav-drawer">
+    <div class="mobile-drawer-header"><div class="brand-text"><span class="brand-name">KrushiMitra</span><span class="brand-sub">Agri Medicines</span></div><button class="drawer-close-btn">&times;</button></div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="crops.html" class="nav-link">Crop Guides</a></li>
+      <li><a href="diseases.html" class="nav-link">Plant Diseases</a></li>
+      <li><a href="medicines.html" class="nav-link active">Medicines & IPM</a></li>
+      <li><a href="techniques.html" class="nav-link">Techniques</a></li>
+      <li><a href="schemes.html" class="nav-link">Govt Schemes</a></li>
+      <li><a href="articles.html" class="nav-link">Articles</a></li>
+    </ul>
+  </aside>
+
+  <div class="search-modal" role="dialog" aria-modal="true">
+    <div class="search-card">
+      <div class="search-card-header">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" class="search-input-field" placeholder="Search active ingredients, trade names, pesticides...">
+        <button class="search-card-close">&times;</button>
+      </div>
+      <div class="search-results-area"></div>
+    </div>
+  </div>
+
+  <main>
+    <section class="internal-hero">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-sep">/</span>
+          <span class="breadcrumb-curr">Agricultural Medicines & IPM</span>
+        </nav>
+        <h1>Agricultural Medicines & Chemical Safety Directory</h1>
+        <p>
+          Official registered compound profiles compliant with Central Insecticide Board & Registration Committee (CIBRC) standards. Strict safety equipment, pre-harvest intervals, and environmental guidelines.
+        </p>
+      </div>
+    </section>
+
+    <div class="container" style="padding-top: 48px; padding-bottom: 80px;">
+      <!-- Mandatory Statutory Pesticide Warning Banner -->
+      <div class="callout-box callout-danger" style="margin-top: 0; margin-bottom: 32px;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+          <line x1="12" y1="9" x2="12" y2="13"></line>
+          <line x1="12" y1="17" x2="12.01" y2="17"></line>
+        </svg>
+        <div>
+          <h3 style="font-size: 1.15rem; color: var(--color-danger); margin-bottom: 6px;">
+            STATUTORY AGROCHEMICAL USE & STEWARDSHIP NOTICE
+          </h3>
+          <p style="font-size: 0.9rem; line-height: 1.6; color: #5C1D1D; margin-bottom: 8px;">
+            1. <strong>Follow Exact Label:</strong> Dosage, water volume, and registered crops must strictly follow the official container label approved by the CIBRC. Different commercial formulations of the same active ingredient carry different concentrations.<br>
+            2. <strong>No Unverified Tank Mixtures:</strong> Never mix two chemical pesticides without authorized compatibility verification on the product leaflet.<br>
+            3. <strong>Personal Protective Equipment (PPE):</strong> Always wear a respirator mask, protective chemical goggles, heavy nitrile rubber gloves, and rubber gumboots when measuring and spraying.<br>
+            4. <strong>Safe Storage:</strong> Keep all agro-chemicals securely locked away from children, food, animal feed, and potable drinking water wells.<br>
+            5. <strong>Professional Advisory:</strong> KrushiMitra is an educational catalog and does NOT substitute for qualified Agricultural Officers or Plant Protection Officers.
+          </p>
+        </div>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar-container" data-target-grid="medicinesGrid">
+        <div class="filter-group-tags">
+          <button type="button" class="filter-btn active" data-filter="all">All Compounds (6)</button>
+          <button type="button" class="filter-btn" data-filter="insecticide">Insecticides</button>
+          <button type="button" class="filter-btn" data-filter="fungicide">Fungicides</button>
+          <button type="button" class="filter-btn" data-filter="bio-pesticide">Bio-Pesticides</button>
+          <button type="button" class="filter-btn" data-filter="herbicide">Herbicides</button>
+          <button type="button" class="filter-btn" data-filter="pgr">Plant Growth Regulators</button>
+        </div>
+        <div class="filter-search-box">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" placeholder="Search by active ingredient or pest..." aria-label="Search medicine catalog">
+        </div>
+      </div>
+
+      <!-- Medicine Detailed Cards -->
+      <div class="filterable-grid" id="medicinesGrid" style="display: flex; flex-direction: column; gap: 32px;">
+
+        <!-- 1. Neem Oil / Azadirachtin -->
+        <article class="card filterable-card" id="neem-oil" data-category="bio-pesticide" style="padding: 32px;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; flex-wrap: wrap; gap: 10px;">
+            <div>
+              <span class="badge" style="background-color: #E8F5E9; color: #2E7D32; margin-bottom: 8px; width: fit-content;">Bio-Pesticide • Botanical Extract</span>
+              <h2 style="font-size: 1.6rem; color: var(--color-forest);">Neem Oil 10,000 PPM (Azadirachtin 1% EC)</h2>
+              <span style="font-size: 0.85rem; color: var(--color-text-light);">CIBRC Registered Botanical Formulations</span>
+            </div>
+            <span class="badge badge-verified">✓ Eco-Friendly / Pollinator Safe</span>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 16px 0; background-color: var(--color-cream); padding: 18px; border-radius: var(--radius-md); font-size: 0.875rem;">
+            <div><strong>Target Pests:</strong> Aphids, Whiteflies, Jassids, Early Caterpillars</div>
+            <div><strong>Registered Crops:</strong> Cotton, Cumin, Mustard, Groundnut, Vegetables</div>
+            <div><strong>Mode of Action:</strong> Ecdysone blocker, anti-feedant, oviposition deterrent</div>
+            <div><strong>Pre-Harvest Interval (PHI):</strong> 0 to 3 Days</div>
+            <div><strong>Re-Entry Interval (REI):</strong> 4 Hours</div>
+            <div><strong>Spray Volume:</strong> 500 L water/ha (dilution: 2.0 to 3.0 ml/L water)</div>
+          </div>
+
+          <div style="font-size: 0.925rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 16px;">
+            <strong>Label-Approved Guidance:</strong> Thoroughly agitate the formulation before mixing. Spray in the late afternoon to prevent rapid UV degradation of active azadirachtin isomers. Safe for predatory ladybird beetles, green lacewings, and pollinating honeybees.
+          </div>
+
+          <div style="border-top: 1px solid var(--color-border-light); padding-top: 14px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 0.825rem; color: var(--color-text-light);">
+            <span>First-Aid: In case of eye contact, rinse with clean water for 15 minutes. Non-hazardous when used according to label instructions.</span>
+            <a href="https://ppqs.gov.in" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); font-weight: 700;">CIBRC Schedule &#8599;</a>
+          </div>
+        </article>
+
+        <!-- 2. Chlorpyrifos 20% EC -->
+        <article class="card filterable-card" id="chlorpyrifos" data-category="insecticide" style="padding: 32px;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; flex-wrap: wrap; gap: 10px;">
+            <div>
+              <span class="badge" style="background-color: #FFEBEE; color: #C62828; margin-bottom: 8px; width: fit-content;">Organophosphate Insecticide</span>
+              <h2 style="font-size: 1.6rem; color: var(--color-forest);">Chlorpyrifos 20% EC</h2>
+              <span style="font-size: 0.85rem; color: var(--color-text-light);">Caution Class: Moderately Hazardous (Blue Triangle)</span>
+            </div>
+            <span class="badge badge-caution">⚠ Restricted Soil/Termite Use</span>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 16px 0; background-color: var(--color-cream); padding: 18px; border-radius: var(--radius-md); font-size: 0.875rem;">
+            <div><strong>Target Pests:</strong> Termites, White Grubs, Cutworms</div>
+            <div><strong>Registered Crops:</strong> Wheat seed treatment, Groundnut soil drench, Sugarcane</div>
+            <div><strong>Mode of Action:</strong> Acetylcholinesterase (AChE) inhibitor</div>
+            <div><strong>Pre-Harvest Interval (PHI):</strong> 30 Days (Soil application)</div>
+            <div><strong>Re-Entry Interval (REI):</strong> 24 Hours</div>
+            <div><strong>Dosage (Label):</strong> 3 to 4 L/ha in soil application, or 4 ml/kg seed for termites</div>
+          </div>
+
+          <div style="font-size: 0.925rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 16px;">
+            <strong>Environmental & Safety Precautions:</strong> Highly toxic to aquatic ecosystems and fish. Never wash spray equipment or empty drums near ponds, borewells, or open drainage canals. Keep out of reach of domestic animals and grazing livestock.
+          </div>
+
+          <div style="border-top: 1px solid var(--color-border-light); padding-top: 14px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 0.825rem; color: var(--color-text-light);">
+            <span>First-Aid & Antidote: If swallowed, induce vomiting if patient is conscious. Specific medical antidote: <strong>Atropine Sulfate</strong> administered intravenously under physician care.</span>
+            <a href="https://ppqs.gov.in" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); font-weight: 700;">CIBRC Portal &#8599;</a>
+          </div>
+        </article>
+
+        <!-- 3. Imidacloprid 17.8% SL -->
+        <article class="card filterable-card" id="imidacloprid" data-category="insecticide" style="padding: 32px;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; flex-wrap: wrap; gap: 10px;">
+            <div>
+              <span class="badge" style="background-color: #E3F2FD; color: #1565C0; margin-bottom: 8px; width: fit-content;">Systemic Neonicotinoid Insecticide</span>
+              <h2 style="font-size: 1.6rem; color: var(--color-forest);">Imidacloprid 17.8% SL</h2>
+              <span style="font-size: 0.85rem; color: var(--color-text-light);">Acropetal Systemic Protection</span>
+            </div>
+            <span class="badge badge-caution">⚠ Toxic to Honeybees</span>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 16px 0; background-color: var(--color-cream); padding: 18px; border-radius: var(--radius-md); font-size: 0.875rem;">
+            <div><strong>Target Pests:</strong> Aphids, Jassids, Thrips, Brown Plant Hopper</div>
+            <div><strong>Registered Crops:</strong> Cotton, Groundnut, Paddy, Chilli, Cumin</div>
+            <div><strong>Mode of Action:</strong> Nicotinic acetylcholine receptor (nAChR) agonist</div>
+            <div><strong>Pre-Harvest Interval (PHI):</strong> 21–40 Days (Crop specific)</div>
+            <div><strong>Re-Entry Interval (REI):</strong> 12 Hours</div>
+            <div><strong>Dosage (Label):</strong> 100 to 125 ml/ha (dilution: 0.3 to 0.5 ml/L water)</div>
+          </div>
+
+          <div style="font-size: 0.925rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 16px;">
+            <strong>Pollinator Protection Warning:</strong> Highly toxic to foraging honeybees. Strictly avoid spraying during morning hours when crop flowers are in active bloom. Wait until late evening after bees return to hives.
+          </div>
+
+          <div style="border-top: 1px solid var(--color-border-light); padding-top: 14px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 0.825rem; color: var(--color-text-light);">
+            <span>First-Aid: Wash skin contaminated with spray immediately with copious soap and clean water. Antidote is symptomatic.</span>
+            <a href="https://ppqs.gov.in" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); font-weight: 700;">CIBRC Specification &#8599;</a>
+          </div>
+        </article>
+
+        <!-- 4. Mancozeb 75% WP -->
+        <article class="card filterable-card" id="mancozeb" data-category="fungicide" style="padding: 32px;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; flex-wrap: wrap; gap: 10px;">
+            <div>
+              <span class="badge" style="background-color: #EDE7F6; color: #512DA8; margin-bottom: 8px; width: fit-content;">Broad-Spectrum Contact Fungicide</span>
+              <h2 style="font-size: 1.6rem; color: var(--color-forest);">Mancozeb 75% WP</h2>
+              <span style="font-size: 0.85rem; color: var(--color-text-light);">Dithiocarbamate Multi-Site Inhibitor</span>
+            </div>
+            <span class="badge badge-verified">✓ Low Resistance Risk</span>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 16px 0; background-color: var(--color-cream); padding: 18px; border-radius: var(--radius-md); font-size: 0.875rem;">
+            <div><strong>Target Diseases:</strong> Tikka Leaf Spot, Early & Late Blight, Downy Mildew</div>
+            <div><strong>Registered Crops:</strong> Groundnut, Cumin, Wheat, Potato, Tomato, Cotton</div>
+            <div><strong>Mode of Action:</strong> Inactivates essential fungal enzymes and amino acids (Multi-site)</div>
+            <div><strong>Pre-Harvest Interval (PHI):</strong> 15–20 Days</div>
+            <div><strong>Re-Entry Interval (REI):</strong> 24 Hours</div>
+            <div><strong>Dosage (Label):</strong> 1.5 to 2.0 kg/ha (dilution: 2.0 to 2.5 g/L water)</div>
+          </div>
+
+          <div style="font-size: 0.925rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 16px;">
+            <strong>Application Note:</strong> Functions as a protective shield. Must be sprayed *prior* to fungal spore entry. Uniform coverage on both upper and lower leaf surfaces is vital.
+          </div>
+
+          <div style="border-top: 1px solid var(--color-border-light); padding-top: 14px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 0.825rem; color: var(--color-text-light);">
+            <span>PPE: Use rubber gloves, dust respirator, and face mask while preparing suspension from wettable powder.</span>
+            <a href="https://ppqs.gov.in" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); font-weight: 700;">CIBRC Registry &#8599;</a>
+          </div>
+        </article>
+
+        <!-- 5. Azoxystrobin 18.2% + Difenoconazole 11.4% SC -->
+        <article class="card filterable-card" id="azoxystrobin" data-category="fungicide" style="padding: 32px;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; flex-wrap: wrap; gap: 10px;">
+            <div>
+              <span class="badge" style="background-color: #EDE7F6; color: #512DA8; margin-bottom: 8px; width: fit-content;">Dual-Action Systemic Fungicide</span>
+              <h2 style="font-size: 1.6rem; color: var(--color-forest);">Azoxystrobin 18.2% + Difenoconazole 11.4% SC</h2>
+              <span style="font-size: 0.85rem; color: var(--color-text-light);">Strobilurin (QoI) + Triazole (DMI) Systemic Combination</span>
+            </div>
+            <span class="badge badge-verified">✓ Curative & Preventive</span>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 16px 0; background-color: var(--color-cream); padding: 18px; border-radius: var(--radius-md); font-size: 0.875rem;">
+            <div><strong>Target Diseases:</strong> Powdery Mildew, Alternaria Blight, Rust, Blast</div>
+            <div><strong>Registered Crops:</strong> Cumin, Wheat, Paddy, Chilli, Tomato</div>
+            <div><strong>Mode of Action:</strong> Inhibits mitochondrial respiration + ergosterol biosynthesis</div>
+            <div><strong>Pre-Harvest Interval (PHI):</strong> 21 Days</div>
+            <div><strong>Re-Entry Interval (REI):</strong> 24 Hours</div>
+            <div><strong>Dosage (Label):</strong> 500 ml/ha (dilution: 1.0 ml/L water)</div>
+          </div>
+
+          <div style="font-size: 0.925rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 16px;">
+            <strong>Resistance Management (FRAC Guidelines):</strong> To prevent resistant fungal strain development, do not apply this combination more than twice per crop season. Alternate with contact fungicides like Mancozeb or Sulfur.
+          </div>
+
+          <div style="border-top: 1px solid var(--color-border-light); padding-top: 14px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 0.825rem; color: var(--color-text-light);">
+            <span>Precautions: Wear eye protection and waterproof boots. Avoid inhaling spray mist.</span>
+            <a href="https://ppqs.gov.in" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); font-weight: 700;">CIBRC Schedule &#8599;</a>
+          </div>
+        </article>
+
+        <!-- 6. Pendimethalin 30% EC -->
+        <article class="card filterable-card" id="pendimethalin" data-category="herbicide" style="padding: 32px;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; flex-wrap: wrap; gap: 10px;">
+            <div>
+              <span class="badge" style="background-color: #FFF3E0; color: #E65100; margin-bottom: 8px; width: fit-content;">Pre-Emergence Selective Herbicide</span>
+              <h2 style="font-size: 1.6rem; color: var(--color-forest);">Pendimethalin 30% EC</h2>
+              <span style="font-size: 0.85rem; color: var(--color-text-light);">Dinitroaniline Microtubule Assembly Inhibitor</span>
+            </div>
+            <span class="badge badge-caution">⚠ Soil Moisture Essential</span>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 16px 0; background-color: var(--color-cream); padding: 18px; border-radius: var(--radius-md); font-size: 0.875rem;">
+            <div><strong>Target Weeds:</strong> Annual grasses (Echinochloa, Digitaria) & broadleaf weeds</div>
+            <div><strong>Registered Crops:</strong> Cotton, Groundnut, Wheat, Cumin, Soybean, Onion</div>
+            <div><strong>Mode of Action:</strong> Inhibits root and shoot mitosis in emerging weed seeds</div>
+            <div><strong>Application Timing:</strong> Strictly within 24–48 hours of sowing, before crop/weed emergence</div>
+            <div><strong>Re-Entry Interval (REI):</strong> 24 Hours</div>
+            <div><strong>Dosage (Label):</strong> 2.5 to 3.3 L/ha (diluted in 500 L water/ha using flat-fan nozzle)</div>
+          </div>
+
+          <div style="font-size: 0.925rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 16px;">
+            <strong>Application Prerequisite:</strong> Soil must have good moisture at the time of spray for chemical activation. Use a flat-fan or flood-jet nozzle with a protective spray hood to ensure a continuous herbicide barrier over the soil surface. Do not disturb the soil layer after application.
+          </div>
+
+          <div style="border-top: 1px solid var(--color-border-light); padding-top: 14px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 0.825rem; color: var(--color-text-light);">
+            <span>PPE: Wear chemical-resistant apron, nitrile gloves, and face shield during mixing and nozzle calibration.</span>
+            <a href="https://ppqs.gov.in" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); font-weight: 700;">CIBRC Registry &#8599;</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 KrushiMitra. Practical agronomy for Indian farmers.</div>
+        <div class="footer-bottom-links">
+          <a href="crops.html">Crop Guides</a>
+          <a href="diseases.html">Diseases</a>
+          <a href="medicines.html">Medicines</a>
+          <a href="schemes.html">Schemes</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/filters.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Farmer Inquiry — KrushiMitra</title>
+  <meta name="description" content="Reach out to the KrushiMitra agricultural team for feedback, advisory questions, or find the national toll-free Kisan Call Centre helpline details.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12A10 10 0 0 1 12 2z"></path>
+            <path d="M12 6v12"></path>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">KrushiMitra</span>
+          <span class="brand-sub">કૃષિમિત્ર • Contact & Help</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="crops.html" class="nav-link">Crop Guides</a></li>
+        <li><a href="diseases.html" class="nav-link">Plant Diseases</a></li>
+        <li><a href="medicines.html" class="nav-link">Medicines</a></li>
+        <li><a href="techniques.html" class="nav-link">Techniques</a></li>
+        <li><a href="schemes.html" class="nav-link">Govt Schemes</a></li>
+        <li><a href="articles.html" class="nav-link">Articles</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button type="button" class="btn-icon-nav search-trigger-btn" aria-label="Open Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+        <button type="button" class="lang-selector-btn"><span class="current-lang-text">EN</span></button>
+        <button type="button" class="hamburger-btn"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-nav-drawer">
+    <div class="mobile-drawer-header"><div class="brand-text"><span class="brand-name">KrushiMitra</span><span class="brand-sub">Contact</span></div><button class="drawer-close-btn">&times;</button></div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="crops.html" class="nav-link">Crop Guides</a></li>
+      <li><a href="diseases.html" class="nav-link">Plant Diseases</a></li>
+      <li><a href="medicines.html" class="nav-link">Medicines & IPM</a></li>
+      <li><a href="techniques.html" class="nav-link">Techniques</a></li>
+      <li><a href="schemes.html" class="nav-link">Govt Schemes</a></li>
+      <li><a href="articles.html" class="nav-link">Articles</a></li>
+      <li><a href="about.html" class="nav-link">About Us</a></li>
+      <li><a href="contact.html" class="nav-link active">Contact</a></li>
+    </ul>
+  </aside>
+
+  <div class="search-modal" role="dialog" aria-modal="true">
+    <div class="search-card">
+      <div class="search-card-header">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" class="search-input-field" placeholder="Search crops, pests, medicines...">
+        <button class="search-card-close">&times;</button>
+      </div>
+      <div class="search-results-area"></div>
+    </div>
+  </div>
+
+  <main>
+    <section class="internal-hero">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-sep">/</span>
+          <span class="breadcrumb-curr">Contact & Help</span>
+        </nav>
+        <h1>Contact & Advisory Support</h1>
+        <p>
+          Send feedback or inquiries to our agronomy documentation desk. For emergency field diagnoses and scheme assistance, connect with official national helplines.
+        </p>
+      </div>
+    </section>
+
+    <div class="container" style="padding-top: 56px; padding-bottom: 80px;">
+      <div style="display: grid; grid-template-columns: 1fr 380px; gap: 40px;" class="detail-layout">
+
+        <!-- Form Card -->
+        <div class="form-card">
+          <h2 style="font-size: 1.6rem; color: var(--color-forest); margin-bottom: 8px;">Submit Farmer Inquiry / Feedback</h2>
+          <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 24px;">
+            Fields marked with an asterisk (<span style="color: var(--color-danger);">*</span>) are required. All entries are validated on the client side.
+          </p>
+
+          <form id="farmerContactForm" novalidate>
+            <!-- Form Feedback Alert (Handled by forms.js) -->
+            <div class="form-feedback-alert" role="alert"></div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label for="contactName" class="form-label">Full Name <span style="color: var(--color-danger);">*</span></label>
+                <input type="text" class="form-control" id="contactName" placeholder="e.g., Rajeshbhai Patel" required>
+                <span class="invalid-feedback">Please enter your name (minimum 2 characters).</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactContact" class="form-label">Mobile Number or Email <span style="color: var(--color-danger);">*</span></label>
+                <input type="text" class="form-control" id="contactContact" placeholder="e.g., 9876543210 or kisan@gmail.com" required>
+                <span class="invalid-feedback">Please enter a valid phone number or email address.</span>
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label for="contactDistrict" class="form-label">District (Gujarat) <span style="color: var(--color-danger);">*</span></label>
+                <select class="form-control" id="contactDistrict" required>
+                  <option value="" disabled selected>Select District</option>
+                  <option value="Rajkot">Rajkot (રાજકોટ)</option>
+                  <option value="Surendranagar">Surendranagar (સુરેન્દ્રનગર)</option>
+                  <option value="Junagadh">Junagadh (જૂનાગઢ)</option>
+                  <option value="Amreli">Amreli (અમરેલી)</option>
+                  <option value="Bhavnagar">Bhavnagar (ભાવનગર)</option>
+                  <option value="Jamnagar">Jamnagar (જામનગર)</option>
+                  <option value="Mehsana">Mehsana (મહેસાણા)</option>
+                  <option value="Patan">Patan (પાટણ)</option>
+                  <option value="Banaskantha">Banaskantha (બનાસકાંઠા)</option>
+                  <option value="Sabarkantha">Sabarkantha (સાબરકાંઠા)</option>
+                  <option value="Kheda">Kheda (ખેડા)</option>
+                  <option value="Anand">Anand (આણંદ)</option>
+                  <option value="Ahmedabad">Ahmedabad (અમદાવાદ)</option>
+                  <option value="Vadodara">Vadodara (વડોદરા)</option>
+                  <option value="Bharuch">Bharuch (ભરૂચ)</option>
+                  <option value="Surat">Surat (સૂરત)</option>
+                  <option value="Navsari">Navsari (નવસારી)</option>
+                  <option value="Kutch">Kutch (કચ્છ)</option>
+                  <option value="Other">Other Region / Outside Gujarat</option>
+                </select>
+                <span class="invalid-feedback">Please select your district.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject" class="form-label">Subject / Topic <span style="color: var(--color-danger);">*</span></label>
+                <input type="text" class="form-control" id="contactSubject" placeholder="e.g., Cumin Blight Control advice" required>
+                <span class="invalid-feedback">Please provide a subject.</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Detailed Inquiry or Field Symptoms <span style="color: var(--color-danger);">*</span></label>
+              <textarea class="form-control" id="contactMessage" rows="5" placeholder="Describe your crop, days since sowing, visible leaf symptoms, or question..." required></textarea>
+              <span class="invalid-feedback">Please describe your query in detail (minimum 10 characters).</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              Submit Inquiry
+            </button>
+          </form>
+        </div>
+
+        <!-- Help Sidebar -->
+        <aside style="display: flex; flex-direction: column; gap: 24px;">
+          <!-- Emergency Toll Free Box -->
+          <div class="sidebar-widget" style="background-color: var(--color-forest-dark); color: #FFFFFF; border: none;">
+            <div style="font-size: 0.8rem; text-transform: uppercase; color: var(--color-gold); font-weight: 700; margin-bottom: 8px;">
+              Immediate Agricultural Assistance
+            </div>
+            <h3 style="color: #FFFFFF; font-size: 1.35rem; margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.15);">
+              National Kisan Call Centre
+            </h3>
+            <p style="font-size: 0.85rem; color: #D1DDD5; line-height: 1.6; margin-bottom: 16px;">
+              Speak directly with a qualified agricultural officer in Gujarati, Hindi, or English for immediate diagnosis and emergency pest advice.
+            </p>
+            <div style="background: rgba(255,255,255,0.1); padding: 14px; border-radius: var(--radius-md); text-align: center; margin-bottom: 16px;">
+              <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-leaf-light);">Toll-Free Helpline</span>
+              <a href="tel:18001801551" style="display: block; font-size: 1.5rem; font-weight: 800; color: #FFFFFF; margin: 4px 0;">1800-180-1551</a>
+              <span style="font-size: 0.75rem; color: #B4C4B8;">Open 7 Days • 6:00 AM to 10:00 PM</span>
+            </div>
+            <p style="font-size: 0.75rem; color: #A3B8A8; line-height: 1.4;">
+              Government of India Ministry of Agriculture initiative free of charge across all telecom operators.
+            </p>
+          </div>
+
+          <!-- KVK Contact Guide -->
+          <div class="sidebar-widget">
+            <h3 style="font-size: 1.15rem; margin-bottom: 12px;">Local Krishi Vigyan Kendra (KVK)</h3>
+            <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 14px;">
+              For physical seed testing, soil card samples, and in-person pest inspections, visit your District KVK:
+            </p>
+            <ul style="font-size: 0.8rem; color: var(--color-text-muted); display: flex; flex-direction: column; gap: 8px; list-style: disc; padding-left: 18px;">
+              <li><strong>Rajkot:</strong> KVK Targhadia (JAU)</li>
+              <li><strong>Surendranagar:</strong> KVK Chotila</li>
+              <li><strong>Mehsana:</strong> KVK Ganpat University</li>
+              <li><strong>Anand:</strong> KVK AAU Campus</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 KrushiMitra. Practical agronomy for Indian farmers.</div>
+        <div class="footer-bottom-links">
+          <a href="crops.html">Crop Guides</a>
+          <a href="diseases.html">Diseases</a>
+          <a href="medicines.html">Medicines</a>
+          <a href="schemes.html">Schemes</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/forms.js"></script>
+</body>
+</html>

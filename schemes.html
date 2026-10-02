@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Government Schemes & Farmer Services Directory — KrushiMitra</title>
+  <meta name="description" content="Verified directory of Indian central and Gujarat state agricultural schemes: PM-KISAN, PMFBY crop insurance, Soil Health Card, e-NAM, Kisan Call Centre, and i-Khedut portal.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12A10 10 0 0 1 12 2z"></path>
+            <path d="M12 6v12"></path>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">KrushiMitra</span>
+          <span class="brand-sub">કૃષિમિત્ર • Government Schemes</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="crops.html" class="nav-link">Crop Guides</a></li>
+        <li><a href="diseases.html" class="nav-link">Plant Diseases</a></li>
+        <li><a href="medicines.html" class="nav-link">Medicines</a></li>
+        <li><a href="techniques.html" class="nav-link">Techniques</a></li>
+        <li><a href="schemes.html" class="nav-link active">Govt Schemes</a></li>
+        <li><a href="articles.html" class="nav-link">Articles</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button type="button" class="btn-icon-nav search-trigger-btn" aria-label="Open Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+        <button type="button" class="lang-selector-btn"><span class="current-lang-text">EN</span></button>
+        <button type="button" class="hamburger-btn"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-nav-drawer">
+    <div class="mobile-drawer-header"><div class="brand-text"><span class="brand-name">KrushiMitra</span><span class="brand-sub">Govt Schemes</span></div><button class="drawer-close-btn">&times;</button></div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="crops.html" class="nav-link">Crop Guides</a></li>
+      <li><a href="diseases.html" class="nav-link">Plant Diseases</a></li>
+      <li><a href="medicines.html" class="nav-link">Medicines & IPM</a></li>
+      <li><a href="techniques.html" class="nav-link">Techniques</a></li>
+      <li><a href="schemes.html" class="nav-link active">Govt Schemes</a></li>
+      <li><a href="articles.html" class="nav-link">Articles</a></li>
+    </ul>
+  </aside>
+
+  <div class="search-modal" role="dialog" aria-modal="true">
+    <div class="search-card">
+      <div class="search-card-header">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" class="search-input-field" placeholder="Search schemes, subsidies, insurance, portals...">
+        <button class="search-card-close">&times;</button>
+      </div>
+      <div class="search-results-area"></div>
+    </div>
+  </div>
+
+  <main>
+    <section class="internal-hero">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-sep">/</span>
+          <span class="breadcrumb-curr">Government Schemes</span>
+        </nav>
+        <h1>Government Schemes & Farmer Services Directory</h1>
+        <p>
+          Official repository of Central and Gujarat State agricultural welfare schemes, direct benefit transfer (DBT) programs, subsidized equipment initiatives, and toll-free helplines.
+        </p>
+      </div>
+    </section>
+
+    <div class="container" style="padding-top: 48px; padding-bottom: 80px;">
+      <!-- Legal Eligibility Disclaimer Banner -->
+      <div class="callout-box callout-info" style="margin-top: 0; margin-bottom: 32px;">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="16" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12.01" y2="8"></line>
+        </svg>
+        <div>
+          <strong style="color: var(--color-forest);">Official Portal Policy Notice:</strong> KrushiMitra connects farmers directly to verified official government domains (.gov.in / .nic.in). We never ask for Aadhaar OTPs, banking PINs, or processing fees. Program eligibility, payment approval, and subsidy disbursement are subject entirely to physical document verification by relevant district authorities.
+        </div>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar-container" data-target-grid="schemesGrid">
+        <div class="filter-group-tags">
+          <button type="button" class="filter-btn active" data-filter="all">All Schemes (6)</button>
+          <button type="button" class="filter-btn" data-filter="central government">Central Schemes</button>
+          <button type="button" class="filter-btn" data-filter="gujarat state">Gujarat State Schemes</button>
+          <button type="button" class="filter-btn" data-filter="insurance">Crop Insurance</button>
+          <button type="button" class="filter-btn" data-filter="income support">Income Support</button>
+          <button type="button" class="filter-btn" data-filter="service">Farmer Services</button>
+        </div>
+        <div class="filter-search-box">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" placeholder="Search by scheme name or keyword..." aria-label="Search schemes">
+        </div>
+      </div>
+
+      <!-- Schemes Grid -->
+      <div class="grid-cards-3 filterable-grid" id="schemesGrid">
+
+        <!-- 1. PM-KISAN -->
+        <article class="card filterable-card" id="pm-kisan" data-category="central government income support">
+          <div class="card-content">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; gap: 8px;">
+              <span class="badge" style="background-color: #E3F2FD; color: #1565C0;">Central Government DBT</span>
+              <span style="font-size: 0.75rem; color: var(--color-text-light);">Verified: Oct 2026</span>
+            </div>
+            <h2 class="card-title" style="font-size: 1.35rem;">PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)</h2>
+            <p class="card-desc">
+              Direct income support transferring <strong>₹6,000 per year</strong> into the bank accounts of all landholding farmer families across the country in 3 equal four-monthly installments of ₹2,000 each.
+            </p>
+            <div style="background-color: var(--color-cream); padding: 14px; border-radius: var(--radius-md); font-size: 0.825rem; margin-bottom: 16px;">
+              <strong>Eligibility & Documents:</strong> All landholding farmer families with cultivable land in revenue records. Institutional landholders and high-income taxpayers excluded. Mandatory: Aadhaar card, land 7/12 record, and active bank account with eKYC completion.
+            </div>
+            <div class="card-footer">
+              <a href="https://pmkisan.gov.in" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="border-radius: var(--radius-pill);">
+                Visit pmkisan.gov.in &#8599;
+              </a>
+              <span style="font-size: 0.8rem; color: var(--color-text-light);">Helpline: 155261</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. PMFBY -->
+        <article class="card filterable-card" id="pmfby" data-category="central government insurance">
+          <div class="card-content">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; gap: 8px;">
+              <span class="badge" style="background-color: #FFF8E1; color: #F57F17;">Crop Insurance</span>
+              <span style="font-size: 0.75rem; color: var(--color-text-light);">Verified: Oct 2026</span>
+            </div>
+            <h2 class="card-title" style="font-size: 1.35rem;">PMFBY (Pradhan Mantri Fasal Bima Yojana)</h2>
+            <p class="card-desc">
+              Comprehensive crop insurance protecting farmers against yield losses due to non-preventable natural risks (drought, dry spells, flood, pest outbreaks, unseasonal rains, and post-harvest cyclone damage).
+            </p>
+            <div style="background-color: var(--color-cream); padding: 14px; border-radius: var(--radius-md); font-size: 0.825rem; margin-bottom: 16px;">
+              <strong>Premium Rates:</strong> Maximum 2.0% of sum insured for Kharif food and oilseed crops, 1.5% for Rabi crops, and 5% for annual commercial/horticultural crops. Balance premium subsidized equally by Central and State Governments.
+            </div>
+            <div class="card-footer">
+              <a href="https://pmfby.gov.in" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="border-radius: var(--radius-pill);">
+                Visit pmfby.gov.in &#8599;
+              </a>
+              <span style="font-size: 0.8rem; color: var(--color-text-light);">Claim within 72 hrs</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Soil Health Card Scheme -->
+        <article class="card filterable-card" id="soil-health-card" data-category="central government service">
+          <div class="card-content">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; gap: 8px;">
+              <span class="badge" style="background-color: #E8F5E9; color: #2E7D32;">Central Scheme • Soil Health</span>
+              <span style="font-size: 0.75rem; color: var(--color-text-light);">Verified: Oct 2026</span>
+            </div>
+            <h2 class="card-title" style="font-size: 1.35rem;">Soil Health Card Scheme</h2>
+            <p class="card-desc">
+              Provides farmers with printed Soil Health Cards detailing the nutrient status of their individual farm holdings across 12 crucial parameters, along with customized crop-wise fertilizer dosage recommendations.
+            </p>
+            <div style="background-color: var(--color-cream); padding: 14px; border-radius: var(--radius-md); font-size: 0.825rem; margin-bottom: 16px;">
+              <strong>12 Parameters Tested:</strong> Macro-nutrients (N, P, K), secondary nutrients (S), micronutrients (Zn, Fe, Cu, Mn, B), and physical parameters (pH, Electrical Conductivity, Organic Carbon).
+            </div>
+            <div class="card-footer">
+              <a href="https://soilhealth.dac.gov.in" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="border-radius: var(--radius-pill);">
+                Soil Health Portal &#8599;
+              </a>
+              <span style="font-size: 0.8rem; color: var(--color-text-light);">Issued Every 3 Years</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. e-NAM (National Agriculture Market) -->
+        <article class="card filterable-card" id="enam" data-category="central government service">
+          <div class="card-content">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; gap: 8px;">
+              <span class="badge" style="background-color: #EDE7F6; color: #512DA8;">Digital Mandi Trading</span>
+              <span style="font-size: 0.75rem; color: var(--color-text-light);">Verified: Oct 2026</span>
+            </div>
+            <h2 class="card-title" style="font-size: 1.35rem;">e-NAM (National Agriculture Market)</h2>
+            <p class="card-desc">
+              Pan-India electronic trading portal networking physical APMC mandis into a unified national market. Enables transparent online bidding, digital assaying, and direct online payment to farmer accounts.
+            </p>
+            <div style="background-color: var(--color-cream); padding: 14px; border-radius: var(--radius-md); font-size: 0.825rem; margin-bottom: 16px;">
+              <strong>Key Benefit:</strong> Real-time discovery of competitive commodity prices across mandis in Gujarat (Gondal, Rajkot, Unjha, Surat) and other states, eliminating local buyer cartels.
+            </div>
+            <div class="card-footer">
+              <a href="https://enam.gov.in" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="border-radius: var(--radius-pill);">
+                Visit enam.gov.in &#8599;
+              </a>
+              <span style="font-size: 0.8rem; color: var(--color-text-light);">Over 1,300 Mandis</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. Gujarat i-Khedut Portal -->
+        <article class="card filterable-card" id="ikhedut" data-category="gujarat state service">
+          <div class="card-content">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; gap: 8px;">
+              <span class="badge" style="background-color: #E8F5E9; color: #2E7D32;">Gujarat State Portal</span>
+              <span style="font-size: 0.75rem; color: var(--color-text-light);">Verified: Oct 2026</span>
+            </div>
+            <h2 class="card-title" style="font-size: 1.35rem;">Gujarat i-Khedut Portal (આઈ-ખેડૂત પોર્ટલ)</h2>
+            <p class="card-desc">
+              Unified state web portal by the Department of Agriculture, Government of Gujarat. Farmers submit single-window online applications for state farm equipment subsidies, tractor grants, water storage tanks, and solar pumps.
+            </p>
+            <div style="background-color: var(--color-cream); padding: 14px; border-radius: var(--radius-md); font-size: 0.825rem; margin-bottom: 16px;">
+              <strong>Available Subsidies:</strong> Tractor purchase (up to ₹45,000–₹60,000 subsidy), rotavators, power tillers, certified hybrid seeds, cow rearing sahay (₹900/month for indigenous desi cow), and pipeline grants.
+            </div>
+            <div class="card-footer">
+              <a href="https://ikhedut.gujarat.gov.in" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="border-radius: var(--radius-pill);">
+                ikhedut.gujarat.gov.in &#8599;
+              </a>
+              <span style="font-size: 0.8rem; color: var(--color-text-light);">7/12 & 8-A Required</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Kisan Call Centre -->
+        <article class="card filterable-card" id="kisan-call-centre" data-category="central government service">
+          <div class="card-content">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; gap: 8px;">
+              <span class="badge" style="background-color: #E3F2FD; color: #1565C0;">Nationwide Advisory Service</span>
+              <span style="font-size: 0.75rem; color: var(--color-text-light);">Verified: Oct 2026</span>
+            </div>
+            <h2 class="card-title" style="font-size: 1.35rem;">Kisan Call Centre (KCC Helpline)</h2>
+            <p class="card-desc">
+              Toll-free telephonic agricultural extension service operated by the Ministry of Agriculture. Farmers speak directly to agricultural graduates (Level-1) and subject matter specialists (Level-2) in their regional language.
+            </p>
+            <div style="background-color: var(--color-cream); padding: 14px; border-radius: var(--radius-md); font-size: 0.825rem; margin-bottom: 16px;">
+              <strong>Operating Hours & Languages:</strong> Dial <strong>1800-180-1551</strong> from any mobile or landline network. Active 7 days a week from <strong>6:00 AM to 10:00 PM</strong> in Gujarati, Hindi, and 20 other national languages.
+            </div>
+            <div class="card-footer">
+              <a href="tel:18001801551" class="btn btn-gold btn-sm" style="border-radius: var(--radius-pill);">
+                📞 Call 1800-180-1551
+              </a>
+              <span style="font-size: 0.8rem; color: var(--color-text-light);">100% Toll-Free</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 KrushiMitra. Practical agronomy for Indian farmers.</div>
+        <div class="footer-bottom-links">
+          <a href="crops.html">Crop Guides</a>
+          <a href="diseases.html">Diseases</a>
+          <a href="medicines.html">Medicines</a>
+          <a href="schemes.html">Schemes</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/filters.js"></script>
+</body>
+</html>
