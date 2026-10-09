@@ -1,56 +1,162 @@
-# KrushiMitra (કૃષિમિત્ર) — Smart Farming Guidance Portal
+# KrushiMitra 🌾 — Smart Farming Guidance Portal
 
-> **Practical, Scientifically Grounded Agricultural Intelligence for Indian Farmers**
+> **Practical Agricultural Information for Indian Farmers**
 
-KrushiMitra is a comprehensive, production-ready agricultural information portal designed to empower farmers—especially across Gujarat and Western India—with authentic crop cultivation packages, verified pest and disease diagnosis, strict agrochemical safety compliance, and direct links to official government welfare schemes.
+KrushiMitra is a web-based agricultural information portal designed to help farmers access organized information about crop cultivation, plant diseases and pests, agricultural medicines, modern farming techniques, government schemes, and agricultural articles. The website focuses on crops commonly cultivated in Gujarat and Western India.
+
+Built using **HTML5, CSS3, and Vanilla JavaScript**, KrushiMitra provides a responsive interface with searchable information, category filtering, crop-specific guides, and visual references for crop identification and plant health.
 
 ---
 
-## 🌾 Key Highlights & Features
+## 🌱 Key Features
 
-- **No Frameworks:** Built exclusively with **semantic HTML5**, **modular CSS3** (custom design tokens, selective glassmorphism, responsive CSS grid/flexbox), and **Vanilla JavaScript**.
-- **Regional Agronomic Focus:** Prioritizes key commercial and food crops of Gujarat:
-  - **Cotton (કપાસ)** — Deep black soil cultivation, drip fertigation, and pink bollworm IPM.
-  - **Groundnut (મગફળી)** — Saurashtra focus, gypsum scheduling at pegging, and Tikka leaf spot control.
-  - **Wheat (ઘઉં)** — Irrigated GW varieties and dryland Bhal Daudkhani durum wheat.
-  - **Rice / Paddy (ડાંગર)** — Puddle transplanting, SRI methods, zinc nutrition, and stem borer management.
-  - **Cumin (જીરું)** — High-value Unjha spice agronomy, light irrigation rules, and powdery mildew prophylaxis.
-  - **Castor (દિવેલા)** — GCH hybrids, wide row spacing, semilooper IPM, and multi-flush harvesting.
-  - **Pearl Millet (બાજરી)** — Climate-resilient coarse grain for Banaskantha and Kutch.
-  - **Maize (મકાઈ)** — Dual-purpose grain and fodder for Eastern Gujarat tribal belts.
-- **Strict Agrochemical Safety (CIBRC Label Compliance):**
-  - Explicit dosage, formulation, pre-harvest intervals (PHI), re-entry intervals (REI), and pollinator toxicity warnings.
-  - Zero fabricated chemical brands or speculative tank mixtures.
-- **Comprehensive Plant Disease & Pest Identification:**
-  - Visual symptom diagnosis with practical distinguishing features, contributing weather triggers, and threshold-based IPM.
-- **Official Government Schemes Directory:**
-  - Verified programs: PM-KISAN, PMFBY (Crop Insurance), Soil Health Card, e-NAM Mandis, Kisan Call Centre (Toll-Free `1800-180-1551`), and the Gujarat **i-Khedut** portal.
-- **Live Search & Filter Engine:**
-  - Instant searchable catalog indexed across all crops, diseases, medicines, techniques, and articles.
-  - Category, season, and keyword filtering.
-- **Accessible & Truthful UI:**
-  - Client-side form validation with honest user feedback.
-  - Fully responsive across mobile phones (320px, 375px), tablets (768px), laptops (1024px), and desktop displays (1440px+).
+### 1. Crop Cultivation Guides
+
+Explore cultivation information for major agricultural crops, including:
+
+- **Cotton:** Cultivation practices and pink bollworm management.
+- **Groundnut:** Crop management and leaf spot information.
+- **Wheat:** Cultivation practices and crop nutrition.
+- **Rice:** Paddy cultivation and crop management.
+- **Cumin:** Cultivation practices and powdery mildew information.
+- **Castor:** Cultivation practices and pest management.
+- **Pearl Millet:** Information about a major drought-tolerant cereal crop.
+- **Maize:** Grain and fodder cultivation information.
+
+Dedicated crop detail pages organize cultivation information for individual crops.
+
+### 2. Plant Diseases and Pest Identification
+
+The disease and pest section provides information to help users understand common agricultural problems, including:
+
+- Aphids and whiteflies.
+- Pink bollworm.
+- Leaf spot.
+- Powdery mildew.
+- Root rot.
+- Nutrient deficiencies.
+
+The website includes visual references to support the identification of crop diseases and pests. Diagnosis should be confirmed using reliable agricultural guidance when symptoms are uncertain.
+
+### 3. Agricultural Medicines
+
+The medicines section organizes information about agricultural treatments and responsible pesticide use. Consult the relevant product label and qualified agricultural experts before selecting or applying any chemical treatment.
+
+### 4. Modern Farming Techniques
+
+Access information about agricultural practices such as:
+
+- Drip irrigation and water management.
+- Soil testing and nutrient management.
+- Vermicomposting.
+- Integrated Pest Management (IPM).
+- Other cultivation and crop-management techniques.
+
+### 5. Government Schemes and Farmer Resources
+
+The website provides information and links related to agricultural welfare programs and public resources, including:
+
+- PM-KISAN.
+- Pradhan Mantri Fasal Bima Yojana (PMFBY).
+- Soil Health Card Scheme.
+- e-NAM.
+- Gujarat i-Khedut portal.
+- Kisan Call Centre.
+
+Users should consult the respective official portals for current eligibility requirements, application procedures, and scheme updates.
+
+### 6. Agricultural Articles
+
+The articles section presents agricultural guides and educational content to help users explore farming practices, crop management, and related topics.
+
+### 7. Search and Filtering
+
+The website includes client-side search and filtering features to help users find relevant agricultural information more efficiently.
+
+Depending on the page, users can explore information by category, season, or keyword.
+
+### 8. Responsive User Interface
+
+The interface is designed to adapt to different screen sizes, including desktop computers, laptops, tablets, and mobile phones.
+
+### 9. Additional Pages
+
+The website also includes supporting pages for:
+
+- About KrushiMitra.
+- Contact information and form.
+- Privacy policy.
+- Agricultural and legal disclaimer.
+
+---
+
+## 🖼️ Latest Image Updates
+
+The latest commit, `50a022b` — **“crops and diseases images fixed”** — improves image references throughout the website and adds image assets for agricultural content.
+
+The update includes changes to:
+
+- `index.html`
+- `crops.html`
+- `diseases.html`
+- `articles.html`
+
+New image assets include:
+
+| Image file | Purpose |
+|---|---|
+| `images/castor.jpg` | Castor crop |
+| `images/cumin.jpg` | Cumin crop |
+| `images/groundnut.jpg` | Groundnut crop |
+| `images/kapas.jpg` | Cotton crop |
+| `images/maize.jpg` | Maize crop |
+| `images/pearl_millet.jpg` | Pearl millet crop |
+| `images/rice.jpg` | Rice crop |
+| `images/wheat.jpg` | Wheat crop |
+| `images/aphids.jpg` | Aphid pest |
+| `images/white_flies.jpg` | Whitefly pest |
+| `images/pink_bollworm.jpg` | Pink bollworm pest |
+| `images/leaf_spot.jpg` | Leaf spot disease |
+| `images/powdery_mildew.jpg` | Powdery mildew disease |
+| `images/root_rot.jpg` | Root rot disease |
+| `images/nutrient.jpg` | Nutrient deficiency reference |
+| `images/IPM.jpg` | Integrated Pest Management reference |
+
+These images provide visual context for crop and plant-health information.
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| HTML5 | Website structure and semantic content |
+| CSS3 | Styling, layout, and responsive design |
+| Vanilla JavaScript | Search, filtering, navigation, and client-side interactions |
+| Git | Version control |
+| GitHub | Source code hosting and collaboration |
+
+**No frontend framework is required.** The website uses standard web technologies and can run locally without a build process.
 
 ---
 
 ## 📁 Project Structure
 
 ```text
-krushimitra/
-├── index.html                   # Homepage (Hero, category strip, featured crops, seasonal tasks, IPM, footer)
-├── crops.html                   # Searchable Crop Catalog with category & season filters
-├── diseases.html                # Plant Disease & Pest Library (differential diagnosis, triggers, IPM)
-├── medicines.html               # Agricultural Medicines Directory (CIBRC label compliance, PPE, PHI, REI)
-├── techniques.html              # Modern Farming Techniques (Drip descaling, Soil testing, Vermicomposting)
-├── schemes.html                 # Government Schemes Directory (PM-KISAN, PMFBY, i-Khedut, Kisan Call Centre)
-├── articles.html                # Field Research Guides & Seasonal Agronomic Articles
-├── about.html                   # About KrushiMitra (Mission, editorial standards, institutional disclaimer)
-├── contact.html                 # Contact form with client-side validation & helpline resources
-├── privacy.html                 # Privacy policy
-├── disclaimer.html              # Agricultural and legal disclaimer
+wad-project/
+├── index.html
+├── crops.html
+├── diseases.html
+├── medicines.html
+├── techniques.html
+├── schemes.html
+├── articles.html
+├── about.html
+├── contact.html
+├── privacy.html
+├── disclaimer.html
 │
-├── crop-details/                # Dedicated Crop Cultivation Manuals
+├── crop-details/
 │   ├── cotton.html
 │   ├── groundnut.html
 │   ├── wheat.html
@@ -62,65 +168,111 @@ krushimitra/
 │
 ├── assets/
 │   ├── css/
-│   │   ├── style.css            # Design tokens, typography, glassmorphism, components
-│   │   └── responsive.css       # Mobile-first media queries (320px to 1440px)
-│   ├── js/
-│   │   ├── main.js              # Nav scroll, mobile drawer, accordions, back-to-top, toast, lang modal
-│   │   ├── search.js            # Live indexed search engine across all agri entities
-│   │   ├── filters.js           # Multi-category filtering and seasonal tab switching
-│   │   └── forms.js             # Client-side validation & honest demonstration feedback
-│   └── images/
-└── README.md                    # Project documentation
+│   │   ├── style.css
+│   │   └── responsive.css
+│   └── js/
+│       ├── main.js
+│       ├── search.js
+│       ├── filters.js
+│       └── forms.js
+│
+├── images/
+│   ├── castor.jpg
+│   ├── cumin.jpg
+│   ├── groundnut.jpg
+│   ├── kapas.jpg
+│   ├── maize.jpg
+│   ├── pearl_millet.jpg
+│   ├── rice.jpg
+│   ├── wheat.jpg
+│   ├── aphids.jpg
+│   ├── white_flies.jpg
+│   ├── pink_bollworm.jpg
+│   ├── leaf_spot.jpg
+│   ├── powdery_mildew.jpg
+│   ├── root_rot.jpg
+│   ├── nutrient.jpg
+│   └── IPM.jpg
+│
+└── README.md
 ```
+
+*Note: This structure summarizes the known project files and image assets introduced in the latest commit. Retain any additional files and folders already present in your repository.*
 
 ---
 
 ## 🚀 Running the Website Locally
 
-Because KrushiMitra is built with standard HTML5, CSS3, and Vanilla JavaScript, it requires **no build step, no npm install, and no transpilation**.
+KrushiMitra uses standard HTML, CSS, and JavaScript. No dependency installation or compilation is required for basic local development.
 
-### Option 1: Python Built-in HTTP Server (Recommended)
-Open your terminal in the `krushimitra` directory and run:
+### Option 1: VS Code Live Server
+
+1. Open the project folder in Visual Studio Code.
+2. Install the **Live Server** extension if it is not already installed.
+3. Open `index.html`.
+4. Right-click the file and select **Open with Live Server**.
+
+### Option 2: Python HTTP Server
+
+Make sure Python is installed, then open a terminal in the project directory and run:
 
 ```bash
-# Python 3
 python -m http.server 8000
 ```
-Then visit: `http://localhost:8000`
 
-### Option 2: Node.js `serve` or `http-server`
-```bash
-npx serve .
-# or
-npx http-server -p 8000
+Open the following address in your browser:
+
+```text
+http://localhost:8000
 ```
 
-### Option 3: VS Code Live Server
-Right-click on `index.html` inside VS Code and select **"Open with Live Server"**.
+### Option 3: Node.js
+
+If Node.js is installed, you can use a static development server:
+
+```bash
+npx serve .
+```
+
+Follow the local URL displayed in the terminal.
 
 ---
 
-## 🌐 Features Requiring Backend / API Integration in Production
+## 🔍 Testing and Verification
 
-KrushiMitra is delivered as a production-grade frontend prototype with honest UI states. In an enterprise cloud deployment, the following features would be backed by live APIs:
+After running the website locally, verify the following:
 
-1. **Live Weather & Monsoon Tracking:**
-   - Integration with the **India Meteorological Department (IMD / Mausam API)** for taluka-level 5-day rainfall forecasts and extreme heatwave warnings.
-2. **Real-Time Mandi Prices (APMC Rates):**
-   - Integration with the **Agmarknet / data.gov.in API** to feed live daily modal prices for commodities across Gondal, Rajkot, Unjha, and Dahod mandis.
-3. **SMS / WhatsApp Advisory Gateway:**
-   - Integration with Kisan SMS portal or Twilio/Gupshup for sending automated pest alerts based on degree-day models.
-4. **Farmer Query Ticketing & Photo Diagnostic Backend:**
-   - Secure cloud storage (e.g., AWS S3 / Google Cloud Storage) and ticketing database (PostgreSQL) enabling agricultural extension officers to review farmer-uploaded pest photos and respond via phone or WhatsApp.
+- The homepage loads correctly.
+- Crop images display on the homepage and crop catalog.
+- Disease and pest images display on the disease page.
+- Article images and references load correctly.
+- Navigation links lead to the appropriate pages.
+- Search and filtering work as expected.
+- The layout adapts to mobile and desktop screens.
+- No unexpected missing-image icons appear.
 
 ---
 
-## 📚 Authoritative Research References
+## 🌾 Project Objective
 
-Agronomic protocols and chemical data in this project are referenced from:
-- **ICAR** — Indian Council of Agricultural Research ([icar.org.in](https://icar.org.in))
-- **AAU** — Anand Agricultural University ([aau.in](https://www.aau.in))
-- **JAU** — Junagadh Agricultural University ([jau.in](https://www.jau.in))
-- **SDAU** — Sardarkrushinagar Dantiwada Agricultural University ([sdau.edu.in](https://www.sdau.edu.in))
-- **CIBRC / DPPQS** — Central Insecticide Board & Directorate of Plant Protection, Quarantine & Storage ([ppqs.gov.in](https://ppqs.gov.in))
-- **Ministry of Agriculture & Farmers Welfare** — ([agricoop.nic.in](https://agricoop.nic.in))
+The objective of KrushiMitra is to make agricultural information more accessible by organizing crop cultivation guidance, plant-health references, farming techniques, and government resources in a single website.
+
+The project demonstrates how fundamental web technologies can be used to develop an accessible, responsive agricultural information portal.
+
+---
+
+## ⚠️ Disclaimer
+
+KrushiMitra is an informational project and should not replace professional agricultural advice. Crop conditions, pest severity, local climate, soil type, and regional regulations may affect the suitability of agricultural practices.
+
+Always verify pesticide selection, dosage, safety precautions, and application instructions against the current product label and recommendations from qualified agricultural authorities.
+
+Government scheme details and eligibility requirements may change. Refer to official government sources for the latest information.
+
+---
+
+## 👨‍💻 Development
+
+KrushiMitra is developed using HTML5, CSS3, and Vanilla JavaScript. Git and GitHub are used to manage source code and track project updates.
+
+For questions, suggestions, or contributions, use the repository's GitHub Issues or the contact options provided by the project.
