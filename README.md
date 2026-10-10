@@ -70,6 +70,24 @@ krushimitra/
 │   │   ├── filters.js           # Multi-category filtering and seasonal tab switching
 │   │   └── forms.js             # Client-side validation & honest demonstration feedback
 │   └── images/
+│
+├── images/                      # Local images used across the website
+│   ├── kapas.jpg
+│   ├── groundnut.jpg
+│   ├── wheat.jpg
+│   ├── rice.jpg
+│   ├── cumin.jpg
+│   ├── castor.jpg
+│   ├── pearl_millet.jpg
+│   ├── maize.jpg
+│   ├── pink_bollworm.jpg
+│   ├── aphids.jpg
+│   ├── white_flies.jpg
+│   ├── powdery_mildew.jpg
+│   ├── leaf_spot.jpg
+│   ├── root_rot.jpg
+│   ├── nutrient.jpg
+│   └── IPM.jpg
 └── README.md                    # Project documentation
 ```
 
